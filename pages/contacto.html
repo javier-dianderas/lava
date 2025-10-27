@@ -5,16 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- <link rel="stylesheet" href="../assets/css/estilos.css" /> -->
   <title>Contacto</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/estilos2.css" />
 </head>
 
 <body>
   <header>
     <!-- Se quitó la clase fixed-top -->
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <nav class="navbar navbar-expand-md header__nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img class="d-inline-block align-text-top"
@@ -22,31 +22,37 @@
             height="24px">
           Estudio Creativo
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler my-2 py-2 header__nav__navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fa-solid fa-bars fa-lg"></i>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
+        <div class="offcanvas offcanvas-end header__nav__offcanvas" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header header__nav__offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Estudio Creativo</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+              <!-- class="btn-close" -->
+              <i class="fa-solid fa-xmark fa-lg"></i>
+            </button>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
+          <div class="offcanvas-body px-0">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item header__nav__nav-item">
+                <a class="nav-link ps-3 header__nav__nav-link" href="../index.html">Inicio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              <li class="nav-item header__nav__nav-item">
+                <a class="nav-link ps-3 header__nav__nav-link" href="nosotros.html">Nosotros</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="servicios.html">Servicios</a>
+              <li class="nav-item header__nav__nav-item">
+                <a class="nav-link ps-3 header__nav__nav-link" href="servicios.html">Servicios</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portafolio.html">Portafolio</a>
+              <li class="nav-item header__nav__nav-item">
+                <a class="nav-link ps-3 header__nav__nav-link" href="portafolio.html">Portafolio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+              <li class="nav-item header__nav__nav-item">
+                <a class="nav-link ps-3 header__nav__nav-link active" aria-current="page"
+                  href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -55,18 +61,18 @@
     </nav>
   </header>
   <main>
-    <section class="container">
+    <section class="container-xl">
       <div class="mt-3"></div>
-      <div class="row">
-        <div>
-          <h1 class="caption-h2">¡Encendamos tu marca!</h1>
-          <p class="p">
+      <div class="row justify-content-center">
+        <div class="nosotros__intro">
+          <h1 class="fw-bold">¡Encendamos tu marca!</h1>
+          <p>
             Cuéntanos sobre tu marca, tu idea o tu próximo proyecto.
           </p>
         </div>
       </div>
-      <div class="row">
-        <form method="post" action="#">
+      <div class="row justify-content-center">
+        <form class="nosotros__form" method="post" action="#">
           <div class="form-floating mb-3">
             <input class="form-control" id="nombres" name="nombres" type="text" required maxlength="50" />
             <label class="form-label" for="nombres">Nombres:</label>
@@ -123,57 +129,64 @@
           </div>
 
           <div>
-            <button class="btn btn-primary" type="submit">Enviar</button>
+            <button class="btn btn-primary nosotros__btn" type="submit">Enviar</button>
           </div>
         </form>
       </div>
       <div class="mt-3"></div>
     </section>
   </main>
-  <footer>
-    <div class="container-fluid">
+  <footer class="py-3 footer">
+    <div class="container-fluid footer__container">
       <div class="row">
-        <div class="col-3">
-          <h3>Lava - Estudio Creativo</h3>
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+          <h4 class="fw-bold">Lava - Estudio Creativo</h4>
         </div>
-        <div class="col-3">
-          <h3>Enlaces rápidos</h3>
-          <ul class="nav flex-column">
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+          <h4 class="fw-bold">Enlaces rápidos</h4>
+          <ul class="nav flex-column footer__nav">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">Inicio</a>
+              <a class="nav-link footer__nav__nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
+              <a class="nav-link footer__nav__nav-link" href="nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="servicios.html">Servicios</a>
+              <a class="nav-link footer__nav__nav-link" href="servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portafolio.html">Portafolio</a>
+              <a class="nav-link footer__nav__nav-link" href="portafolio.html">Portafolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+              <a class="nav-link footer__nav__nav-link active" aria-current="page" href="contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
-        <div class="col-3">
-          <h3>Contacto</h3>
-          <p><i class="fa-solid fa-location-dot"></i> Arequipa, Perú</p>
-          <p><i class="fa-solid fa-phone"></i> +51 999 999 999</p>
-          <p><i class="fa-solid fa-envelope"></i> informes@lava.pe</p>
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+          <h4 class="fw-bold">Contacto</h4>
+          <div class="d-grid" style="grid-template-columns: auto 1fr; grid-template-rows: repeat(3, 30px);">
+            <div><i class="fa-solid fa-location-dot fa-lg"></i></div>
+            <div class="ps-2">Arequipa, Perú</div>
+            <div><i class="fa-solid fa-phone fa-lg"></i></div>
+            <div class="ps-2">+51 999 999 999</div>
+            <div><i class="fa-solid fa-envelope fa-lg"></i></div>
+            <div class="ps-2">informes@lava.pe</div>
+          </div>
         </div>
-        <div class="col-3">
-          <h3>Síguenos</h3>
-          <div class="social-links">
-            <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+          <h4 class="fw-bold">Síguenos</h4>
+          <div class="footer__container--social-links">
+            <a class="me-2" href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+            <a class="me-2" href="#" title="Instagram"><i class="fa-brands fa-instagram fa-lg"></i></a>
+            <a class="me-2" href="#" title="Facebook"><i class="fa-brands fa-facebook fa-lg"></i></a>
+            <a class="me-2" href="#" title="TikTok"><i class="fa-brands fa-tiktok fa-lg"></i></a>
           </div>
         </div>
       </div>
       <div class="row text-center">
-        <span>© 2025 Lava - Estudio Creativo. Todos los derechos reservados.</span>
+        <div class="col-12">
+          <span>© 2025 Lava - Estudio Creativo. Todos los derechos reservados.</span>
+        </div>
       </div>
     </div>
   </footer>
