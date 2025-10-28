@@ -4,183 +4,202 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="../assets/css/estilos.css" />
   <title>Servicios</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/estilos2.css" />
 </head>
 
 <body>
   <header>
-    <section class="navbar">
-      <div class="navbar-logo">
-        <span>Lava - Estudio Creativo</span>
+    <nav class="navbar navbar-expand-md header__nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="d-inline-block align-text-top"
+            src="https://i.pinimg.com/736x/5e/5c/d2/5e5cd202d0e44b742919068ac8037c04.jpg" alt="logo" width="30px"
+            height="24px">
+          Estudio Creativo
+        </a>
+        <button class="navbar-toggler my-2 py-2 header__nav__navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
+        <div class="offcanvas offcanvas-end header__nav__offcanvas" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header header__nav__offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Estudio Creativo</h5>
+            <button type="button" class="btn ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+              <i class="fa-solid fa-xmark fa-lg"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body px-0">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item header__nav__nav-item">
+                <a class="nav-link px-3 header__nav__nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item header__nav__nav-item">
+                <a class="nav-link px-3 header__nav__nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item header__nav__nav-item">
+                <a class="nav-link px-3 header__nav__nav-link active" aria-current="page"
+                  href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item header__nav__nav-item">
+                <a class="nav-link px-3 header__nav__nav-link" href="portafolio.html">Portafolio</a>
+              </li>
+              <li class="nav-item header__nav__nav-item">
+                <a class="nav-link px-3 header__nav__nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="portafolio.html">Portafolio</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <i class="fa-solid fa-bars bars"></i>
-    </section>
+    </nav>
   </header>
-  <main>
-    <div class="margin-vertical-40"></div>
-    <section id="seccion_social_media" class="container">
-      <div class="container-row">
-        <div>
-          <h2 class="caption-h1">Social Media</h2>
-          <p class="p">
-            Gestionamos la presencia digital de tu marca con estrategia y creatividad. Diseñamos planes de comunicación,
-            generamos contenido relevante y aplicamos campañas publicitarias que conectan con las personas y hacen
-            crecer tu comunidad. Incluye:
-          </p>
-          <ul class="p">
-            <li>Estrategia digital y planificación de contenido</li>
-            <li>Producción de contenido</li>
-            <li>Gestión integral de redes sociales</li>
-            <li>Campañas publicitarias y optimización de pauta</li>
-          </ul>
-        </div>
-        <div class="padding-lr-1 display-none"></div>
-        <div>
-          <img class="img-size-card" src="../assets/img/servicios/servicio_social_media.jpg" alt="Social Media" />
-        </div>
-      </div>
-    </section>
-    <div class="margin-vertical-40"></div>
-    <section id="seccion_branding" class="container">
-      <div class="container-row">
-        <div class="display-none">
-          <img class="img-size-card" src="../assets/img/servicios/servicio_branding.jpg" alt="Branding" />
-        </div>
-        <div class="padding-lr-1 display-none"></div>
-        <div>
-          <h2 class="caption-h1">Branding</h2>
-          <p class="p">
-            Construimos marcas con propósito y coherencia. Desarrollamos conceptos sólidos, narrativas visuales
-            consistentes y sistemas gráficos que transmiten la esencia de cada proyecto. Incluye:
-          </p>
-          <ul class="p">
-            <li>Naming y storytelling</li>
-            <li>Identidad visual y universos gráficos</li>
-            <li>Manual de marca</li>
-          </ul>
-        </div>
-        <div class="display-block">
-          <img class="img-size-card" src="../assets/img/servicios/servicio_branding.jpg" alt="Branding" />
-        </div>
-      </div>
-    </section>
-    <div class="margin-vertical-40"></div>
-    <section id="seccion_audiovisual" class="container">
-      <div class="container-row">
-        <div>
-          <h2 class="caption-h1">Producción Audiovisual</h2>
-          <p class="p">
-            Producimos videos publicitarios que cuentan historias, comunican valores y potencian el posicionamiento de
-            las marcas. Desde la idea hasta la edición final, cuidamos cada detalle del proceso creativo y técnico.
-            Incluye:
-          </p>
-          <ul class="p">
-            <li>Spots publicitarios y videos institucionales</li>
-            <li>Reels, campañas y videos para redes</li>
-            <li>Guión, dirección y postproducción</li>
-          </ul>
-        </div>
-        <div class="padding-lr-1 display-none"></div>
-        <div>
-          <img class="img-size-card" src="../assets/img/servicios/servicio_produccion_audiovisual.jpg"
-            alt="Producción Audiovisual" />
-        </div>
-      </div>
-    </section>
-    <div class="margin-vertical-40"></div>
-    <section id="seccion_disenio" class="container">
-      <div class="container-row">
-        <div class="display-none">
-          <img class="img-size-card" src="../assets/img/servicios/servicio_disenio.jpg" alt="Diseño Publicitario" />
-        </div>
-        <div class="padding-lr-1 display-none"></div>
-        <div>
-          <h2 class="caption-h1">Diseño Publicitario</h2>
-          <p class="p">
-            Diseñamos piezas visuales efectivas que fortalecen el mensaje de marca y elevan la percepción de cada
-            proyecto. Integramos creatividad, estética y estrategia en cada propuesta. Incluye:
-          </p>
-          <ul class="p">
-            <li>Diseño de campañas publicitarias</li>
-            <li>Material digital e impreso</li>
-            <li>Creatividad aplicada y dirección de arte</li>
-          </ul>
-        </div>
-        <div class="display-block">
-          <img class="img-size-card" src="../assets/img/servicios/servicio_disenio.jpg" alt="Diseño Publicitario" />
-        </div>
-      </div>
-    </section>
-    <div class="margin-vertical-40"></div>
-    <section id="seccion_fotografia" class="container">
-      <div class="container-row">
-        <div>
-          <h2 class="caption-h1">Fotografía</h2>
-          <p class="p">
-            Creamos contenido fotográfico alineado al estilo y propósito de tu marca. Desde sesiones de producto hasta
-            retratos lifestyle, capturamos imágenes que comunican identidad. Incluye:
-          </p>
-          <ul class="p">
-            <li>Fotografía de producto y lifestyle</li>
-            <li>Dirección de arte</li>
-            <li>Edición y retoque profesional</li>
-          </ul>
-        </div>
-        <div class="padding-lr-1 display-none"></div>
-        <div>
-          <img class="img-size-card" src="../assets/img/servicios/servicio_fotografia.jpg" alt="Fotografía" />
-        </div>
-      </div>
-    </section>
-    <div class="margin-vertical-40"></div>
-  </main>
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>Lava - Estudio Creativo</h3>
-        <p>Tu solución digital para proyectos web modernos.</p>
-      </div>
-      <div class="footer-section">
-        <h4>Enlaces rápidos</h4>
+  <main class="container-lg">
+    <div class="mt-4"></div>
+    <section class="d-grid justify-items-center align-items-center servicios">
+      <div class="servicios__social" id="seccion_social_media">
+        <h2>Social Media</h2>
+        <span>
+          Gestionamos la presencia digital de tu marca con estrategia y creatividad. Diseñamos planes de comunicación,
+          generamos contenido relevante y aplicamos campañas publicitarias que conectan con las personas y hacen
+          crecer tu comunidad. Incluye:
+        </span>
         <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="portafolio.html">Portafolio</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li>Estrategia digital y planificación de contenido</li>
+          <li>Producción de contenido</li>
+          <li>Gestión integral de redes sociales</li>
+          <li>Campañas publicitarias y optimización de pauta</li>
         </ul>
       </div>
-      <div class="footer-section">
-        <h4>Contacto</h4>
-        <p><i class="fa-solid fa-location-dot"></i> Arequipa, Perú</p>
-        <p><i class="fa-solid fa-phone"></i> +51 999 999 999</p>
-        <p><i class="fa-solid fa-envelope"></i> informes@lava.pe</p>
+      <div class="servicios__imagen-social shadow">
+        <img class="servicios__img--size" src="../assets/img/servicios/servicio_social_media.jpg" alt="Social Media" />
       </div>
-      <div class="footer-section">
-        <h4>Síguenos</h4>
-        <div class="social-links">
-          <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <div class="servicios__imagen-branding shadow">
+        <img class="servicios__img--size" src="../assets/img/servicios/servicio_branding.jpg" alt="Branding" />
+      </div>
+      <div class="servicios__branding" id="seccion_branding">
+        <h2>Branding</h2>
+        <span>
+          Construimos marcas con propósito y coherencia. Desarrollamos conceptos sólidos, narrativas visuales
+          consistentes y sistemas gráficos que transmiten la esencia de cada proyecto. Incluye:
+        </span>
+        <ul>
+          <li>Naming y storytelling</li>
+          <li>Identidad visual y universos gráficos</li>
+          <li>Manual de marca</li>
+        </ul>
+      </div>
+      <div class="servicios__audiovisual" id="seccion_audiovisual">
+        <h2>Producción Audiovisual</h2>
+        <span>
+          Producimos videos publicitarios que cuentan historias, comunican valores y potencian el posicionamiento de
+          las marcas. Desde la idea hasta la edición final, cuidamos cada detalle del proceso creativo y técnico.
+          Incluye:
+        </span>
+        <ul>
+          <li>Spots publicitarios y videos institucionales</li>
+          <li>Reels, campañas y videos para redes</li>
+          <li>Guión, dirección y postproducción</li>
+        </ul>
+      </div>
+      <div class="servicios__image-audiovisual shadow">
+        <img class="servicios__img--size" src="../assets/img/servicios/servicio_produccion_audiovisual.jpg"
+          alt="Producción Audiovisual" />
+      </div>
+      <div class="servicios__imagen-disenio shadow">
+        <img class="servicios__img--size" src="../assets/img/servicios/servicio_disenio.jpg"
+          alt="Diseño Publicitario" />
+      </div>
+      <div class="servicios__disenio" id="seccion_disenio">
+        <h2>Diseño Publicitario</h2>
+        <span>
+          Diseñamos piezas visuales efectivas que fortalecen el mensaje de marca y elevan la percepción de cada
+          proyecto. Integramos creatividad, estética y estrategia en cada propuesta. Incluye:
+        </span>
+        <ul>
+          <li>Diseño de campañas publicitarias</li>
+          <li>Material digital e impreso</li>
+          <li>Creatividad aplicada y dirección de arte</li>
+        </ul>
+      </div>
+      <div class="servicios__fotografia" id="seccion_fotografia">
+        <h2>Fotografía</h2>
+        <span>
+          Creamos contenido fotográfico alineado al estilo y propósito de tu marca. Desde sesiones de producto hasta
+          retratos lifestyle, capturamos imágenes que comunican identidad. Incluye:
+        </span>
+        <ul>
+          <li>Fotografía de producto y lifestyle</li>
+          <li>Dirección de arte</li>
+          <li>Edición y retoque profesional</li>
+        </ul>
+      </div>
+      <div class="servicios__imagen-fotografia shadow">
+        <img class="servicios__img--size" src="../assets/img/servicios/servicio_fotografia.jpg" alt="Fotografía" />
+      </div>
+    </section>
+    <div class="mt-4"></div>
+  </main>
+  <footer class="py-3 footer">
+    <div class="container-fluid footer__container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+          <h4 class="fw-bold">Lava - Estudio Creativo</h4>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+          <h4 class="fw-bold">Enlaces rápidos</h4>
+          <ul class="nav flex-column footer__nav">
+            <li class="nav-item">
+              <a class="nav-link footer__nav__nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link footer__nav__nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link footer__nav__nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link footer__nav__nav-link" href="portafolio.html">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link footer__nav__nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+          <h4 class="fw-bold">Contacto</h4>
+          <div class="d-grid footer__container--contacto">
+            <div><i class="fa-solid fa-location-dot fa-lg"></i></div>
+            <div class="ps-2">Arequipa, Perú</div>
+            <div><i class="fa-solid fa-phone fa-lg"></i></div>
+            <div class="ps-2">+51 999 999 999</div>
+            <div><i class="fa-solid fa-envelope fa-lg"></i></div>
+            <div class="ps-2">informes@lava.pe</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+          <h4 class="fw-bold">Síguenos</h4>
+          <div class="footer__container--social-links">
+            <a class="me-2" href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+            <a class="me-2" href="#" title="Instagram"><i class="fa-brands fa-instagram fa-lg"></i></a>
+            <a class="me-2" href="#" title="Facebook"><i class="fa-brands fa-facebook fa-lg"></i></a>
+            <a class="me-2" href="#" title="TikTok"><i class="fa-brands fa-tiktok fa-lg"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Lava - Estudio Creativo. Todos los derechos reservados.</p>
+      <div class="row text-center footer__container--derechos">
+        <div class="col-12 mt-1">
+          <span>© 2025 Lava - Estudio Creativo. Todos los derechos reservados.</span>
+        </div>
+      </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
