@@ -125,27 +125,140 @@ body {
     color: var(--color-terciario);
 }
 
-.nosotros__textarea--height {
+.contacto__textarea--height {
     height: 8rem;
 }
 
-.nosotros__form--form-floating > label {
+.contacto__form--form-floating > label {
     color: var(--color-secundario);
 }
 
-.nosotros__intro {
+.contacto__intro {
     width: 600px;
 }
 
-.nosotros__form {
+.contacto__form {
     width: 600px;
 }
 
-.nosotros__btn {
+.contacto__btn {
     --bs-btn-color: var(--color-blanco);
     --bs-btn-bg: var(--color-primario);
     --bs-btn-border-color: var(--color-primario);
     --bs-btn-hover-color: var(--color-terciario);
     --bs-btn-hover-bg: var(--color-secundario);
     --bs-btn-hover-border-color: var(--color-secundario);
+}
+
+.nosotros__img--size {
+    width: 233px; 
+    height: 350px;
+}
+
+.nosotros__intro {
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(4, auto);
+    row-gap: 1.5rem;
+    grid-template-areas: 
+    "titulo"
+    "imagen-titulo"
+    "dedicatoria"
+    "imagen-dedicatoria";
+}
+
+.nosotros__intro--titulo {
+    grid-area: titulo;
+}
+
+.nosotros__intro--titulo h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nosotros__intro--titulo span {
+    font-size: 1rem;
+}
+
+.nosotros__intro--imagen-titulo {
+    grid-area: imagen-titulo;
+}
+
+.nosotros__intro--imagen-dedicatoria {
+    grid-area: imagen-dedicatoria;
+}
+
+.nosotros__intro--dedicatoria span {
+    font-size: 1rem;
+}
+
+.nosotros__intro--dedicatoria {
+    grid-area: dedicatoria;
+}
+
+.nosotros__confian--titulo {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Se extendio bootstrap */
+.justify-items-center {
+    justify-items: center;
+}
+
+/* sm */
+@media(min-width: 576px) {
+    .nosotros__img--size {
+        width: 233px; 
+        height: 350px;
+    }
+
+    .nosotros__intro {
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "titulo imagen-titulo"
+        "imagen-dedicatoria dedicatoria";
+    }
+
+    .nosotros__intro--titulo h2 {
+        font-size: 1.8rem;
+    }
+
+    .nosotros__intro--titulo span {
+        font-size: 1.25rem;
+    }
+
+    .nosotros__intro--dedicatoria span {
+        font-size: 1.25rem;
+    }
+
+    .nosotros__confian--titulo {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+}
+
+/* lg */
+@media(min-width: 992px) {
+    .nosotros__img--size {
+        width: 333px; 
+        height: 500px;
+    }
+
+    .nosotros__intro--titulo h2 {
+        font-size: 2rem;
+    }
+
+    .nosotros__intro--titulo span {
+        font-size: 1.5rem;
+    }
+
+    .nosotros__intro--dedicatoria span {
+        font-size: 1.5rem;
+    }
+
+    .nosotros__confian--titulo {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
 }
