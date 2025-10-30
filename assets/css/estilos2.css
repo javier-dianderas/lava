@@ -16,8 +16,8 @@
 
 body {
     background-color: var(--color-blanco);
-    color: var(--color-secundario);    
-    font-family: "GeneralSans-Regular";    
+    color: var(--color-secundario);
+    font-family: "GeneralSans-Regular";
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -100,7 +100,7 @@ body {
 }
 
 .footer__container--contacto {
-    grid-template-columns: auto 1fr; 
+    grid-template-columns: auto 1fr;
     grid-template-rows: repeat(3, 30px);
 }
 
@@ -130,7 +130,7 @@ body {
     height: 8rem;
 }
 
-.contacto__form--form-floating > label {
+.contacto__form--form-floating>label {
     color: var(--color-secundario);
 }
 
@@ -153,19 +153,19 @@ body {
 
 /* nosotros */
 .nosotros__img--size {
-    width: 233px; 
+    width: 233px;
     height: 350px;
 }
 
 .nosotros__intro {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     row-gap: 1.5rem;
-    grid-template-areas: 
-    "titulo"
-    "imagen-titulo"
-    "dedicatoria"
-    "imagen-dedicatoria";
+    grid-template-areas:
+        "titulo"
+        "imagen-titulo"
+        "dedicatoria"
+        "imagen-dedicatoria";
 }
 
 .nosotros__intro--titulo {
@@ -201,20 +201,20 @@ body {
 
 /* servicios */
 .servicios {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(10, auto);
     row-gap: 1.5rem;
-    grid-template-areas: 
-    "social"
-    "imagen-social"
-    "branding"
-    "imagen-branding"
-    "audiovisual"
-    "imagen-audiovisual"
-    "disenio"
-    "imagen-disenio"
-    "fotografia"
-    "imagen-fotografia";
+    grid-template-areas:
+        "social"
+        "imagen-social"
+        "branding"
+        "imagen-branding"
+        "audiovisual"
+        "imagen-audiovisual"
+        "disenio"
+        "imagen-disenio"
+        "fotografia"
+        "imagen-fotografia";
 }
 
 .servicios__social {
@@ -280,8 +280,139 @@ body {
 }
 
 .servicios__img--size {
-    width: 233px; 
+    width: 233px;
     height: 350px;
+}
+
+/* portafolio */
+.portafolio {
+    display: grid;
+    max-width: 1200px;
+    padding: 15px;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 300px);
+    grid-template-areas:
+        "proyecto1"
+        "proyecto2"
+        "proyecto3"
+        "proyecto4"
+        "proyecto5"
+        "proyecto6"
+        "proyecto7"
+        "proyecto8";
+}
+
+.portafolio>article:nth-child(1) {
+    grid-area: proyecto1;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.portafolio>article:nth-child(2) {
+    grid-area: proyecto2;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.portafolio>article:nth-child(3) {
+    grid-area: proyecto3;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.portafolio>article:nth-child(4) {
+    grid-area: proyecto4;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.portafolio>article:nth-child(5) {
+    grid-area: proyecto5;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.portafolio>article:nth-child(6) {
+    grid-area: proyecto6;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.portafolio>article:nth-child(7) {
+    grid-area: proyecto7;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.portafolio>article:nth-child(8) {
+    grid-area: proyecto8;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.portafolio>article:nth-child(1):hover,
+.portafolio>article:nth-child(2):hover,
+.portafolio>article:nth-child(3):hover,
+.portafolio>article:nth-child(4):hover,
+.portafolio>article:nth-child(5):hover,
+.portafolio>article:nth-child(6):hover,
+.portafolio>article:nth-child(7):hover,
+.portafolio>article:nth-child(8):hover {
+    transform: scale(1.04);
+    z-index: 10;
+}
+
+.portafolio>article img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.portafolio>article>div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.portafolio>article>div>span:nth-child(1) {
+    font-size: 1.7rem;
+    display: block;
+}
+
+.portafolio>article>div>span:nth-child(2) {
+    font-size: 1.2rem;
+    display: block;
+    font-weight: bold;
 }
 
 /* Se extendio bootstrap */
@@ -292,11 +423,11 @@ body {
 /* sm */
 @media(min-width: 576px) {
     .nosotros__intro {
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
-        grid-template-areas: 
-        "titulo imagen-titulo"
-        "imagen-dedicatoria dedicatoria";
+        grid-template-areas:
+            "titulo imagen-titulo"
+            "imagen-dedicatoria dedicatoria";
     }
 
     .nosotros__intro--titulo h2 {
@@ -314,14 +445,14 @@ body {
     }
 
     .servicios {
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(5, auto);
-        grid-template-areas: 
-        "social imagen-social"
-        "imagen-branding branding"
-        "audiovisual imagen-audiovisual"
-        "imagen-disenio disenio"
-        "fotografia imagen-fotografia";
+        grid-template-areas:
+            "social imagen-social"
+            "imagen-branding branding"
+            "audiovisual imagen-audiovisual"
+            "imagen-disenio disenio"
+            "fotografia imagen-fotografia";
     }
 
     .servicios__social h2,
@@ -346,10 +477,31 @@ body {
     }
 }
 
+/* md */
+@media(min-width: 768px) {
+    .portafolio {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 300px);
+        grid-template-areas:
+            "proyecto1 proyecto2"
+            "proyecto3 proyecto4"
+            "proyecto5 proyecto6"
+            "proyecto7 proyecto8";
+    }
+
+    .portafolio>article>div>span:nth-child(1) {
+        font-size: 1.8rem;
+    }
+
+    .portafolio>article>div>span:nth-child(2) {
+        font-size: 1.3rem;
+    }
+}
+
 /* lg */
-@media(min-width: 992px) {
+@media(min-width: 960px) {
     .nosotros__img--size {
-        width: 333px; 
+        width: 333px;
         height: 500px;
     }
 
@@ -368,7 +520,7 @@ body {
     }
 
     .servicios__img--size {
-        width: 333px; 
+        width: 333px;
         height: 500px;
     }
 
@@ -390,6 +542,24 @@ body {
     .servicios__audiovisual ul,
     .servicios__disenio ul,
     .servicios__fotografia ul {
+        font-size: 1.5rem;
+    }
+
+    .portafolio {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 300px);
+        grid-template-areas:
+            "proyecto1 proyecto1 proyecto2"
+            "proyecto3 proyecto4 proyecto4"
+            "proyecto5 proyecto5 proyecto6"
+            "proyecto7 proyecto8 proyecto8";
+    }
+
+    .portafolio>article>div>span:nth-child(1) {
+        font-size: 2rem;
+    }
+
+    .portafolio>article>div>span:nth-child(2) {
         font-size: 1.5rem;
     }
 }
