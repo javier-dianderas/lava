@@ -430,7 +430,7 @@ body {
 }
 /* inicio */
 .inicio__banner {
-    height: 400px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -616,6 +616,10 @@ body {
     .servicios__disenio ul,
     .servicios__fotografia ul {
         font-size: 1.25rem;
+    }
+
+    .inicio__banner {
+        height: 400px;        
     }
 
     .inicio__banner-caption > span:nth-child(1) {
