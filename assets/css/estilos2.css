@@ -616,11 +616,7 @@ body {
     .servicios__disenio ul,
     .servicios__fotografia ul {
         font-size: 1.25rem;
-    }
-
-    .inicio__banner {
-        height: 400px;        
-    }
+    }    
 
     .inicio__banner-caption > span:nth-child(1) {
         font-size: 1.75rem;
@@ -678,6 +674,10 @@ body {
 
     .portafolio>article>div>span:nth-child(2) {
         font-size: 1.3rem;
+    }
+
+    .inicio__banner {
+        height: 400px;        
     }
 }
 
