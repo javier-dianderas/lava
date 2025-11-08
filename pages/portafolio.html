@@ -16,10 +16,8 @@
     <nav class="navbar navbar-expand-md header__nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img class="d-inline-block align-text-top"
-            src="https://i.pinimg.com/736x/5e/5c/d2/5e5cd202d0e44b742919068ac8037c04.jpg" alt="logo" width="30px"
+          <img class="d-inline-block align-text-top" src="../assets/img/inicio/logo_blanco.png" alt="logo"
             height="24px">
-          Estudio Creativo
         </a>
         <button class="navbar-toggler my-2 py-2 header__nav__navbar-toggler" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -28,7 +26,8 @@
         <div class="offcanvas offcanvas-end header__nav__offcanvas" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header header__nav__offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Estudio Creativo</h5>
+            <img class="d-inline-block align-text-top" src="../assets/img/inicio/logo_blanco.png" alt="logo"
+              height="24px">
             <button type="button" class="btn ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
               <i class="fa-solid fa-xmark fa-lg"></i>
             </button>
@@ -126,7 +125,8 @@
     <div class="container-fluid footer__container">
       <div class="row">
         <div class="col-12 col-sm-6 col-md-3 mb-4">
-          <h4 class="fw-bold">Lava - Estudio Creativo</h4>
+          <img class="d-inline-block align-text-top" src="../assets/img/inicio/logo_blanco.png" alt="logo"
+            height="24px">
         </div>
         <div class="col-12 col-sm-6 col-md-3 mb-4">
           <h4 class="fw-bold">Enlaces rápidos</h4>
@@ -179,6 +179,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const offcanvas = document.getElementById("offcanvasNavbar");
+      const nav = document.querySelector(".header__nav");
+
+      if (offcanvas && nav) {
+        offcanvas.addEventListener("show.bs.offcanvas", () => {
+          nav.classList.add("offcanvas-open");
+        });
+        offcanvas.addEventListener("hidden.bs.offcanvas", () => {
+          nav.classList.remove("offcanvas-open");
+        })
+      }
+    });
+  </script>
 </body>
 
 </html>

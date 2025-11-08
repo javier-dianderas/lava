@@ -42,6 +42,11 @@ body {
     --bs-navbar-padding-y: 0;
 }
 
+
+.header__nav.offcanvas-open .navbar-brand img {
+    display: none !important;
+}
+
 .header__nav__nav-item {
     --bs-nav-link-padding-y: 0.8rem;
 }
