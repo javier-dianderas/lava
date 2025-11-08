@@ -213,6 +213,14 @@ body {
     font-weight: bold;
 }
 
+.nosotros__logos {
+    gap: 25px; 
+}
+
+.nosotros__logos > img {
+    width: 180px; 
+}
+
 /* servicios */
 .servicios {
     grid-template-columns: 1fr;
@@ -499,6 +507,14 @@ body {
     font-weight: bold;
 }
 
+.inicio__logos {
+    gap: 25px;
+}
+
+.inicio__logos > img {
+    width: 150px;
+}
+
 .inicio__container-portafolio-cards {
     gap: 20px;
 }
@@ -584,7 +600,7 @@ body {
 
     .nosotros__confian--titulo {
         font-size: 1.6rem;
-    }
+    }    
 
     .servicios {
         grid-template-columns: 1fr 1fr;
