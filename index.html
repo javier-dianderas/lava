@@ -10,8 +10,9 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/estilos.css" />
 </head>
+<!-- se agrego para que en pantallas muy grandes el contenido ocupe el 100% del viewport -->
 
-<body>
+<body class="d-flex flex-column">
   <header>
     <nav class="navbar navbar-expand-md header__nav">
       <div class="container-fluid">
@@ -53,18 +54,19 @@
       </div>
     </nav>
   </header>
-  <main>
+  <!-- se agrego para que en pantallas muy grandes el contenido ocupe el 100% del viewport -->
+  <main class="flex-grow-1">
     <!-- h1 oculto -->
     <h1 class="clipped">Lava - Estudio Creativo - Inicio</h1>
     <section class="container-fluid px-0">
-      <div id="carouselExampleCaptions" class="carousel slide">
+      <div id="carouselLava" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button> -->
+          <button type="button" data-bs-target="#carouselLava" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Impulsamos marcas con ritmo, visión y estrategia"></button>
+          <button type="button" data-bs-target="#carouselLava" data-bs-slide-to="1"
+            aria-label="Damos vida a marcas con energía, enfoque y propósito"></button>
+          <button type="button" data-bs-target="#carouselLava" data-bs-slide-to="2"
+            aria-label="Encendemos marcas con ritmo propio, visión audaz y alma creativa"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -72,43 +74,39 @@
               alt="Impulsamos marcas con ritmo, visión y estrategia">
             <div class="carousel-caption d-block px-1 inicio__banner-caption">
               <span>Impulsamos marcas con ritmo, visión y estrategia</span>
-              <span>Transformamos ideas en movimiento: marcas vivas, creativas y con propósito.</span>
+              <span class="d-none d-md-block">Transformamos ideas en movimiento: marcas vivas, creativas y con
+                propósito.</span>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/img/inicio/inicio_banner_1.jpg" class="d-block w-100 inicio__banner" alt="...">
+            <img src="assets/img/inicio/inicio_banner_1.jpg" class="d-block w-100 inicio__banner"
+              alt="Damos vida a marcas con energía, enfoque y propósito">
             <div class="carousel-caption d-block px-1 inicio__banner-caption">
-              <span>Second slide label</span>
-              <span>Some representative placeholder content for the second slide.</span>
+              <span>Damos vida a marcas con energía, enfoque y propósito</span>
+              <span class="d-none d-md-block">Convertimos la creatividad en acción: marcas que inspiran, conectan y
+                evolucionan.</span>
             </div>
           </div>
-          <!-- <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+          <div class="carousel-item">
+            <img src="assets/img/inicio/inicio_banner_3.jpg" class="d-block w-100 inicio__banner"
+              alt="Encendemos marcas con ritmo propio, visión audaz y alma creativa">
+            <div class="carousel-caption d-block px-1 inicio__banner-caption">
+              <span>Encendemos marcas con ritmo propio, visión audaz y alma creativa</span>
+              <span class="d-none d-md-block">Hacemos que las ideas vibren: marcas que se mueven, inspiran y dejan
+                huella.</span>
             </div>
-          </div> -->
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselLava" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselLava" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
     </section>
-    <!-- <section class="banner">
-      <img src="/assets/img/inicio/inicio-banner2.png" alt="Imagen principal" />
-      <div class="banner-caption">
-        <h2 class="banner-caption-h1">Impulsamos marcas con ritmo, visión y estrategia</h2>
-        <h3 class="banner-caption-h2">Transformamos ideas en movimiento: marcas vivas, creativas y con propósito</h3>
-      </div>
-    </section> -->
     <!-- sección nosotros -->
     <section class="container-xl mt-4">
       <div class="inicio__container-nosotros">

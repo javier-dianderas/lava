@@ -10,8 +10,9 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/estilos.css" />
 </head>
+<!-- se agrego para que en pantallas muy grandes el contenido ocupe el 100% del viewport -->
 
-<body>
+<body class="d-flex flex-column">
   <header>
     <!-- Se quitó la clase fixed-top -->
     <nav class="navbar navbar-expand-md header__nav">
@@ -57,7 +58,8 @@
       </div>
     </nav>
   </header>
-  <main>
+  <!-- se agrego para que en pantallas muy grandes el contenido ocupe el 100% del viewport -->
+  <main class="flex-grow-1">
     <!-- h1 oculto -->
     <h1 class="clipped">Lava - Estudio Creativo - Contacto</h1>
     <!-- sección contacto -->
@@ -98,7 +100,6 @@
           </div>
           <div class="mb-3">
             <label class="form-label">¿Qué servicios necesitas?</label>
-
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="media" name="servicios[]" value="media" />
               <label class="form-check-label" for="media">Social Media</label>
@@ -120,13 +121,11 @@
               <label class="form-check-label" for="disenio">Diseño Publicitario</label>
             </div>
           </div>
-
           <div class="form-floating mb-3 contacto__form--form-floating">
             <textarea class="form-control contacto__textarea--height" name="detalles" id="detalles" rows="6"
               maxlength="150"></textarea>
             <label class="form-label" for="detalles">¡Cuéntanos más detalles sobre tu proyecto!</label>
           </div>
-
           <div>
             <button class="btn btn-primary contacto__btn" type="submit">Enviar</button>
           </div>

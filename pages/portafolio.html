@@ -10,8 +10,9 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/estilos.css" />
 </head>
+<!-- se agrego para que en pantallas muy grandes el contenido ocupe el 100% del viewport -->
 
-<body>
+<body class="d-flex flex-column">
   <header>
     <nav class="navbar navbar-expand-md header__nav">
       <div class="container-fluid">
@@ -56,7 +57,8 @@
       </div>
     </nav>
   </header>
-  <main>
+  <!-- se agrego para que en pantallas muy grandes el contenido ocupe el 100% del viewport -->
+  <main class="flex-grow-1">
     <!-- h1 oculto -->
     <h1 class="clipped">Lava - Estudio Creativo - Portafolio</h1>
     <!-- sección portafolio -->
