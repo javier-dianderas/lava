@@ -146,14 +146,9 @@ body {
     color: var(--color-terciario);
 }
 
-/* contacto */
-.contacto__textarea--height {
-    height: 8rem;
+.contacto__form > div.form-floating > textarea.form-control {
+    height: 8rem !important;
 }
-
-/* .contacto__form--form-floating>label {
-    color: var(--color-secundario);
-} */
 
 .contacto__form > div.form-floating > label.form-label {
     color: var(--color-secundario);
@@ -164,7 +159,7 @@ body {
     max-width: 600px;
 }
 
-.contacto__btn {
+.contacto__form > div:last-child > button {
     --bs-btn-color: var(--color-blanco);
     --bs-btn-bg: var(--color-primario);
     --bs-btn-border-color: var(--color-primario);
@@ -226,7 +221,7 @@ body {
 }
 
 .nosotros__logos > img {
-    width: 180px; 
+    width: 150px; 
 }
 
 /* servicios */
@@ -316,7 +311,6 @@ body {
 
 /* portafolio */
 .portafolio {
-    display: grid;
     max-width: 1200px;
     padding: 15px;
     gap: 15px;
@@ -682,6 +676,9 @@ body {
 
 /* md */
 @media(min-width: 768px) {
+    .nosotros__logos > img {
+        width: 180px; 
+    }
     .portafolio {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 300px);
