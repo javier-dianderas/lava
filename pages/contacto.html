@@ -74,27 +74,27 @@
       </div>
       <div class="row justify-content-center">
         <form class="contacto__form" method="post" action="#">
-          <div class="form-floating mb-3 contacto__form--form-floating">
+          <div class="form-floating mb-3">
             <input class="form-control" id="nombres" name="nombres" type="text" required maxlength="50" />
             <label class="form-label" for="nombres">Nombres:</label>
           </div>
-          <div class="form-floating mb-3 contacto__form--form-floating">
+          <div class="form-floating mb-3">
             <input class="form-control" id="apellidos" name="apellidos" type="text" required maxlength="50" />
             <label class="form-label" for="apellidos">Apellidos:</label>
           </div>
-          <div class="form-floating mb-3 contacto__form--form-floating">
+          <div class="form-floating mb-3">
             <input class="form-control" id="negocio" name="negocio" type="text" required maxlength="50" />
             <label class="form-label" for="negocio">Marca/Negocio:</label>
           </div>
-          <div class="form-floating mb-3 contacto__form--form-floating">
+          <div class="form-floating mb-3">
             <input class="form-control" id="ciudad" name="ciudad" type="text" required maxlength="50" />
             <label class="form-label" for="ciudad">Ciudad:</label>
           </div>
-          <div class="form-floating mb-3 contacto__form--form-floating">
+          <div class="form-floating mb-3">
             <input class="form-control" id="email" name="email" type="email" required maxlength="30" />
             <label class="form-label" for="email">Email:</label>
           </div>
-          <div class="form-floating mb-3 contacto__form--form-floating">
+          <div class="form-floating mb-3">
             <input class="form-control" id="telefono" name="telefono" type="tel" required maxlength="20" />
             <label class="form-label" for="telefono">Teléfono:</label>
           </div>
@@ -121,7 +121,7 @@
               <label class="form-check-label" for="disenio">Diseño Publicitario</label>
             </div>
           </div>
-          <div class="form-floating mb-3 contacto__form--form-floating">
+          <div class="form-floating mb-3">
             <textarea class="form-control contacto__textarea--height" name="detalles" id="detalles" rows="6"
               maxlength="150"></textarea>
             <label class="form-label" for="detalles">¡Cuéntanos más detalles sobre tu proyecto!</label>
@@ -193,6 +193,7 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
   <script>
+    // se agregó evento para ocultar logo de barra de menu desktop al abrir el menu responsive
     document.addEventListener("DOMContentLoaded", function () {
       const offcanvas = document.getElementById("offcanvasNavbar");
       const nav = document.querySelector(".header__nav");

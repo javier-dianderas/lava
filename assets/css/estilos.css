@@ -36,6 +36,7 @@ body {
     margin: 0 -1px -1px 0;
     overflow: hidden;
     padding: 0;
+    margin: 0;
 }
 
 .header__nav {
@@ -150,16 +151,17 @@ body {
     height: 8rem;
 }
 
-.contacto__form--form-floating>label {
+/* .contacto__form--form-floating>label {
+    color: var(--color-secundario);
+} */
+
+.contacto__form > div.form-floating > label.form-label {
     color: var(--color-secundario);
 }
 
-.contacto__intro {
-    width: 600px;
-}
-
+.contacto__intro,
 .contacto__form {
-    width: 600px;
+    max-width: 600px;
 }
 
 .contacto__btn {
