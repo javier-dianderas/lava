@@ -1,0 +1,54 @@
+.nosotros__img--size {
+    width: 233px;
+    height: 350px;
+}
+
+.nosotros__intro {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 1.5rem;
+    grid-template-areas:
+        "titulo"
+        "imagen-titulo"
+        "dedicatoria"
+        "imagen-dedicatoria";
+}
+
+.nosotros__intro--titulo {
+    grid-area: titulo;
+}
+
+.nosotros__intro--titulo h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.nosotros__intro--imagen-titulo {
+    grid-area: imagen-titulo;
+}
+
+.nosotros__intro--imagen-dedicatoria {
+    grid-area: imagen-dedicatoria;
+}
+
+.nosotros__intro--titulo span,
+.nosotros__intro--dedicatoria span {
+    font-size: 1rem;
+}
+
+.nosotros__intro--dedicatoria {
+    grid-area: dedicatoria;
+}
+
+.nosotros__confian--titulo {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.nosotros__logos {
+    gap: 25px;
+}
+
+.nosotros__logos>img {
+    width: 150px;
+}

@@ -1,0 +1,14 @@
+@use "base/variables";
+@use "base/generales";
+@use "components/header";
+@use "components/footer";
+@use "pages/contacto";
+@use "pages/index";
+@use "pages/nosotros";
+@use "pages/portafolio";
+@use "pages/servicios";
+@use "queries/media-generales";
+@use "queries/media-index";
+@use "queries/media-nosotros";
+@use "queries/media-portafolio";
+@use "queries/media-servicios";

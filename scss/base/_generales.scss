@@ -1,0 +1,52 @@
+:root {
+    --color-primario: rgb(200, 41, 37);
+    --color-primario-semitransparente: rgba(200, 41, 37, 1);
+    --color-secundario: rgb(76, 5, 13);
+    --color-terciario: rgb(149, 177, 199);
+    --color-fondo: rgb(250, 231, 201);
+    --color-blanco: rgb(255, 255, 255);
+    --color-negro-semistransparente: rgba(0, 0, 0, 0.5);
+    --color-negro-semistransparente-suave: rgba(0, 0, 0, 0.1);
+    --color-borde: #ccc;
+
+    --bs-nav-link-color: var(--color-blanco);
+}
+
+body {
+    background-color: var(--color-blanco);
+    color: var(--color-secundario);
+    font-family: "GeneralSans-Regular";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* sirve para ocultar el h1 visualmente, pero mantiene en el DOM */
+.clipped {
+    border: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    display: block;
+    margin: 0 -1px -1px 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+/* Se extendio bootstrap */
+.justify-items-center {
+    justify-items: center;
+}
+
+.link {
+    color: var(--color-secundario);
+    font-size: 1rem;
+}
+
+.link:hover {
+    color: var(--color-terciario);
+}

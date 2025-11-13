@@ -1,0 +1,52 @@
+.footer {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+.footer__container {
+    max-width: 1024px;
+}
+
+.footer__container p {
+    font-size: 1rem;
+}
+
+.footer__container h4 {
+    font-size: 1rem;
+}
+
+.footer__container--social-links a {
+    color: var(--color-blanco);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer__container--social-links a:hover {
+    color: var(--color-terciario);
+    transform: scale(1.1);
+}
+
+.footer__container--contacto {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, 30px);
+}
+
+.footer__container--derechos {
+    border-top: 1px solid var(--color-blanco);
+}
+
+.footer__nav {
+    --bs-nav-link-padding-x: 0;
+}
+
+.footer__nav__nav-link {
+    display: inline;
+    color: var(--color-blanco);
+}
+
+.footer__nav__nav-link.active {
+    color: var(--color-terciario) !important;
+}
+
+.footer__nav__nav-link:hover {
+    color: var(--color-terciario);
+}
