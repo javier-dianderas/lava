@@ -43,56 +43,51 @@ body {
   color: rgb(149, 177, 199);
 }
 
-.header__nav {
+header nav.header__nav {
   background-color: rgb(200, 41, 37);
   --bs-navbar-padding-y: 0;
 }
-
-.header__nav.offcanvas-open .navbar-brand img {
+header nav.header__nav.offcanvas-open .navbar-brand img {
   display: none !important;
 }
-
-.header__nav__nav-item {
-  --bs-nav-link-padding-y: 0.8rem;
+header nav div a img {
+  height: 24px;
 }
-
-.header__nav__nav-link {
-  color: rgb(255, 255, 255);
-}
-
-.header__nav__nav-link.active {
-  color: rgb(149, 177, 199) !important;
-}
-
-.header__nav__nav-link:hover {
-  background-color: rgb(76, 5, 13);
-  color: rgb(149, 177, 199);
-}
-
-.header__nav__navbar-toggler {
+header nav div button.header__nav__navbar-toggler {
   border: 0;
   color: rgb(255, 255, 255);
 }
-
-.header__nav__navbar-toggler:focus {
+header nav div button.header__nav__navbar-toggler:focus {
   box-shadow: none;
 }
-
-.header__nav__offcanvas {
+header nav div div.header__nav__offcanvas {
   background-color: rgb(200, 41, 37);
   color: rgb(255, 255, 255);
 }
-
-.header__nav__offcanvas-header {
+header nav div div div.header__nav__offcanvas-header {
   color: rgb(255, 255, 255);
 }
-
-.header__nav__offcanvas-header .btn {
+header nav div div div img {
+  height: 24px;
+}
+header nav div div div button.btn {
   color: rgb(255, 255, 255);
   border: 0;
 }
-
-.header__nav__offcanvas-header .btn:hover {
+header nav div div div button.btn:hover {
+  color: rgb(149, 177, 199);
+}
+header nav div div div ul li.header__nav__nav-item {
+  --bs-nav-link-padding-y: 0.8rem;
+}
+header nav div div div ul li a.header__nav__nav-link {
+  color: rgb(255, 255, 255);
+}
+header nav div div div ul li a.header__nav__nav-link.active {
+  color: rgb(149, 177, 199) !important;
+}
+header nav div div div ul li a.header__nav__nav-link:hover {
+  background-color: rgb(76, 5, 13);
   color: rgb(149, 177, 199);
 }
 

@@ -1,55 +1,140 @@
 @use "../base/variables" as variable;
 @use "sass:map";
 
-.header__nav {
-    background-color: map.get(variable.$colores, primario);
-    --bs-navbar-padding-y: 0;
+header {
+    nav {
+        &.header__nav {
+            background-color: map.get(variable.$colores, primario);
+            --bs-navbar-padding-y: 0;
+
+            &.offcanvas-open .navbar-brand img {
+                display: none !important;
+            }
+        }
+
+        div {
+            a {
+                img {
+                    height: 24px;
+                }
+            }
+
+            button {
+                &.header__nav__navbar-toggler {
+                    border: 0;
+                    color: map.get(variable.$colores, blanco);
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            div {
+                &.header__nav__offcanvas {
+                    background-color: map.get(variable.$colores, primario);
+                    color: map.get(variable.$colores, blanco);
+                }
+
+                div {
+                    &.header__nav__offcanvas-header {
+                        color: map.get(variable.$colores, blanco);
+                    }
+
+                    img {
+                        height: 24px;
+                    }
+
+                    button {
+                        &.btn {
+                            color: map.get(variable.$colores, blanco);
+                            border: 0;
+
+                            &:hover {
+                                color: map.get(variable.$colores, terciario);
+                            }
+                        }
+                    }
+                }
+
+                div {
+                    ul {
+                        li {
+                            &.header__nav__nav-item {
+                                --bs-nav-link-padding-y: 0.8rem;
+                            }
+
+                            a {
+                                &.header__nav__nav-link {
+                                    color: map.get(variable.$colores, blanco);
+
+                                    &.active {
+                                        color: map.get(variable.$colores, terciario) !important;
+                                    }
+
+                                    &:hover {
+                                        background-color: map.get(variable.$colores, secundario);
+                                        color: map.get(variable.$colores, terciario);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-.header__nav.offcanvas-open .navbar-brand img {
-    display: none !important;
-}
+// .header__nav {
+//     background-color: map.get(variable.$colores, primario);
+//     --bs-navbar-padding-y: 0;
+// }
 
-.header__nav__nav-item {
-    --bs-nav-link-padding-y: 0.8rem;
-}
+// .header__nav.offcanvas-open .navbar-brand img {
+//     display: none !important;
+// }
 
-.header__nav__nav-link {
-    color: map.get(variable.$colores, blanco);
-}
+// .header__nav__nav-item {
+//     --bs-nav-link-padding-y: 0.8rem;
+// }
 
-.header__nav__nav-link.active {
-    color: map.get(variable.$colores, terciario) !important;
-}
+// .header__nav__nav-link {
+//     color: map.get(variable.$colores, blanco);
+// }
 
-.header__nav__nav-link:hover {
-    background-color: map.get(variable.$colores, secundario);
-    color: map.get(variable.$colores, terciario);
-}
+// .header__nav__nav-link.active {
+//     color: map.get(variable.$colores, terciario) !important;
+// }
 
-.header__nav__navbar-toggler {
-    border: 0;
-    color: map.get(variable.$colores, blanco);
-}
+// .header__nav__nav-link:hover {
+//     background-color: map.get(variable.$colores, secundario);
+//     color: map.get(variable.$colores, terciario);
+// }
 
-.header__nav__navbar-toggler:focus {
-    box-shadow: none;
-}
+// .header__nav__navbar-toggler {
+//     border: 0;
+//     color: map.get(variable.$colores, blanco);
+// }
 
-.header__nav__offcanvas {
-    background-color: map.get(variable.$colores, primario);
-    color: map.get(variable.$colores, blanco);
-}
+// .header__nav__navbar-toggler:focus {
+//     box-shadow: none;
+// }
 
-.header__nav__offcanvas-header {
-    color: map.get(variable.$colores, blanco);
-}
+// .header__nav__offcanvas {
+//     background-color: map.get(variable.$colores, primario);
+//     color: map.get(variable.$colores, blanco);
+// }
 
-.header__nav__offcanvas-header .btn {
-    color: map.get(variable.$colores, blanco);
-    border: 0;
-}
+// .header__nav__offcanvas-header {
+//     color: map.get(variable.$colores, blanco);
+// }
 
-.header__nav__offcanvas-header .btn:hover {
-    color: map.get(variable.$colores, terciario);
-}
+// .header__nav__offcanvas-header .btn {
+//     color: map.get(variable.$colores, blanco);
+//     border: 0;
+// }
+
+// .header__nav__offcanvas-header .btn:hover {
+//     color: map.get(variable.$colores, terciario);
+// }
