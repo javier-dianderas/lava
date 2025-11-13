@@ -1,9 +1,12 @@
+@use "../base/variables" as variable;
+@use "sass:map";
+
 .contacto__form>div.form-floating>textarea.form-control {
     height: 8rem !important;
 }
 
 .contacto__form>div.form-floating>label.form-label {
-    color: var(--color-secundario);
+    color: map.get(variable.$colores, secundario);
 }
 
 .contacto__intro,
@@ -12,10 +15,10 @@
 }
 
 .contacto__form>div:last-child>button {
-    --bs-btn-color: var(--color-blanco);
-    --bs-btn-bg: var(--color-primario);
-    --bs-btn-border-color: var(--color-primario);
-    --bs-btn-hover-color: var(--color-terciario);
-    --bs-btn-hover-bg: var(--color-secundario);
-    --bs-btn-hover-border-color: var(--color-secundario);
+    --bs-btn-color: #{map.get(variable.$colores, blanco)};
+    --bs-btn-bg: #{map.get(variable.$colores, primario)};
+    --bs-btn-border-color: #{map.get(variable.$colores, primario)};
+    --bs-btn-hover-color: #{map.get(variable.$colores, terciario)};
+    --bs-btn-hover-bg: #{map.get(variable.$colores, secundario)};
+    --bs-btn-hover-border-color: #{map.get(variable.$colores, secundario)};
 }

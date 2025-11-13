@@ -1,21 +1,12 @@
 @charset "UTF-8";
 @import url("general-sans.css");
 :root {
-  --color-primario: rgb(200, 41, 37);
-  --color-primario-semitransparente: rgba(200, 41, 37, 1);
-  --color-secundario: rgb(76, 5, 13);
-  --color-terciario: rgb(149, 177, 199);
-  --color-fondo: rgb(250, 231, 201);
-  --color-blanco: rgb(255, 255, 255);
-  --color-negro-semistransparente: rgba(0, 0, 0, 0.5);
-  --color-negro-semistransparente-suave: rgba(0, 0, 0, 0.1);
-  --color-borde: #ccc;
-  --bs-nav-link-color: var(--color-blanco);
+  --bs-nav-link-color: rgb(255, 255, 255);
 }
 
 body {
-  background-color: var(--color-blanco);
-  color: var(--color-secundario);
+  background-color: rgb(255, 255, 255);
+  color: rgb(76, 5, 13);
   font-family: "GeneralSans-Regular";
   box-sizing: border-box;
   margin: 0;
@@ -44,16 +35,16 @@ body {
 }
 
 .link {
-  color: var(--color-secundario);
+  color: rgb(76, 5, 13);
   font-size: 1rem;
 }
 
 .link:hover {
-  color: var(--color-terciario);
+  color: rgb(149, 177, 199);
 }
 
 .header__nav {
-  background-color: var(--color-primario);
+  background-color: rgb(200, 41, 37);
   --bs-navbar-padding-y: 0;
 }
 
@@ -66,21 +57,21 @@ body {
 }
 
 .header__nav__nav-link {
-  color: var(--color-blanco);
+  color: rgb(255, 255, 255);
 }
 
 .header__nav__nav-link.active {
-  color: var(--color-terciario) !important;
+  color: rgb(149, 177, 199) !important;
 }
 
 .header__nav__nav-link:hover {
-  background-color: var(--color-secundario);
-  color: var(--color-terciario);
+  background-color: rgb(76, 5, 13);
+  color: rgb(149, 177, 199);
 }
 
 .header__nav__navbar-toggler {
   border: 0;
-  color: var(--color-blanco);
+  color: rgb(255, 255, 255);
 }
 
 .header__nav__navbar-toggler:focus {
@@ -88,26 +79,26 @@ body {
 }
 
 .header__nav__offcanvas {
-  background-color: var(--color-primario);
-  color: var(--color-blanco);
+  background-color: rgb(200, 41, 37);
+  color: rgb(255, 255, 255);
 }
 
 .header__nav__offcanvas-header {
-  color: var(--color-blanco);
+  color: rgb(255, 255, 255);
 }
 
 .header__nav__offcanvas-header .btn {
-  color: var(--color-blanco);
+  color: rgb(255, 255, 255);
   border: 0;
 }
 
 .header__nav__offcanvas-header .btn:hover {
-  color: var(--color-terciario);
+  color: rgb(149, 177, 199);
 }
 
 .footer {
-  background-color: var(--color-primario);
-  color: var(--color-blanco);
+  background-color: rgb(200, 41, 37);
+  color: rgb(255, 255, 255);
 }
 
 .footer__container {
@@ -123,12 +114,12 @@ body {
 }
 
 .footer__container--social-links a {
-  color: var(--color-blanco);
+  color: rgb(255, 255, 255);
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .footer__container--social-links a:hover {
-  color: var(--color-terciario);
+  color: rgb(149, 177, 199);
   transform: scale(1.1);
 }
 
@@ -138,7 +129,7 @@ body {
 }
 
 .footer__container--derechos {
-  border-top: 1px solid var(--color-blanco);
+  border-top: 1px solid rgb(255, 255, 255);
 }
 
 .footer__nav {
@@ -147,15 +138,15 @@ body {
 
 .footer__nav__nav-link {
   display: inline;
-  color: var(--color-blanco);
+  color: rgb(255, 255, 255);
 }
 
 .footer__nav__nav-link.active {
-  color: var(--color-terciario) !important;
+  color: rgb(149, 177, 199) !important;
 }
 
 .footer__nav__nav-link:hover {
-  color: var(--color-terciario);
+  color: rgb(149, 177, 199);
 }
 
 .contacto__form > div.form-floating > textarea.form-control {
@@ -163,7 +154,7 @@ body {
 }
 
 .contacto__form > div.form-floating > label.form-label {
-  color: var(--color-secundario);
+  color: rgb(76, 5, 13);
 }
 
 .contacto__intro,
@@ -172,12 +163,12 @@ body {
 }
 
 .contacto__form > div:last-child > button {
-  --bs-btn-color: var(--color-blanco);
-  --bs-btn-bg: var(--color-primario);
-  --bs-btn-border-color: var(--color-primario);
-  --bs-btn-hover-color: var(--color-terciario);
-  --bs-btn-hover-bg: var(--color-secundario);
-  --bs-btn-hover-border-color: var(--color-secundario);
+  --bs-btn-color: rgb(255, 255, 255);
+  --bs-btn-bg: rgb(200, 41, 37);
+  --bs-btn-border-color: rgb(200, 41, 37);
+  --bs-btn-hover-color: rgb(149, 177, 199);
+  --bs-btn-hover-bg: rgb(76, 5, 13);
+  --bs-btn-hover-border-color: rgb(76, 5, 13);
 }
 
 .inicio__banner {
@@ -186,7 +177,7 @@ body {
 }
 
 .inicio__banner-caption {
-  background-color: var(--color-negro-semistransparente);
+  background-color: rgba(0, 0, 0, 0.5);
   right: 0;
   left: 0;
   bottom: 0;
@@ -214,9 +205,9 @@ body {
 
 /* inicio - sección servicios */
 .inicio__container-servicio-cards > a > article {
-  background-color: var(--color-primario-semitransparente);
-  color: var(--color-blanco);
-  box-shadow: 0 2px 6px var(--color-negro-semistransparente-suave);
+  background-color: rgb(200, 41, 37);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
   height: 100%;
@@ -225,7 +216,7 @@ body {
 
 .inicio__container-servicio-cards > a > article:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px var(--color-negro-semistransparente);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 .inicio__container-servicio-cards > a > article > img {
@@ -236,7 +227,7 @@ body {
 
 .inicio__container-servicio-cards > a > article > div {
   padding: 0.75rem 1rem;
-  color: var(--color-blanco);
+  color: rgb(255, 255, 255);
 }
 
 .inicio__container-servicio-cards > a > article > div > span:nth-child(1) {
@@ -274,12 +265,12 @@ body {
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 2px 6px var(--color-negro-semistransparente-suave);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .inicio__container-portafolio-cards > a > article:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px var(--color-negro-semistransparente);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 .inicio__container-portafolio-cards > a > article > img {
@@ -294,8 +285,8 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: var(--color-negro-semistransparente);
-  color: var(--color-blanco);
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
   padding: 15px 20px;
 }
 
@@ -462,7 +453,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   padding: 1rem;

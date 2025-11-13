@@ -1,5 +1,8 @@
+@use "../base/variables" as variable;
+@use "sass:map";
+
 .header__nav {
-    background-color: var(--color-primario);
+    background-color: map.get(variable.$colores, primario);
     --bs-navbar-padding-y: 0;
 }
 
@@ -12,21 +15,21 @@
 }
 
 .header__nav__nav-link {
-    color: var(--color-blanco);
+    color: map.get(variable.$colores, blanco);
 }
 
 .header__nav__nav-link.active {
-    color: var(--color-terciario) !important;
+    color: map.get(variable.$colores, terciario) !important;
 }
 
 .header__nav__nav-link:hover {
-    background-color: var(--color-secundario);
-    color: var(--color-terciario);
+    background-color: map.get(variable.$colores, secundario);
+    color: map.get(variable.$colores, terciario);
 }
 
 .header__nav__navbar-toggler {
     border: 0;
-    color: var(--color-blanco);
+    color: map.get(variable.$colores, blanco);
 }
 
 .header__nav__navbar-toggler:focus {
@@ -34,19 +37,19 @@
 }
 
 .header__nav__offcanvas {
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
+    background-color: map.get(variable.$colores, primario);
+    color: map.get(variable.$colores, blanco);
 }
 
 .header__nav__offcanvas-header {
-    color: var(--color-blanco);
+    color: map.get(variable.$colores, blanco);
 }
 
 .header__nav__offcanvas-header .btn {
-    color: var(--color-blanco);
+    color: map.get(variable.$colores, blanco);
     border: 0;
 }
 
 .header__nav__offcanvas-header .btn:hover {
-    color: var(--color-terciario);
+    color: map.get(variable.$colores, terciario);
 }

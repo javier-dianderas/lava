@@ -1,20 +1,13 @@
-:root {
-    --color-primario: rgb(200, 41, 37);
-    --color-primario-semitransparente: rgba(200, 41, 37, 1);
-    --color-secundario: rgb(76, 5, 13);
-    --color-terciario: rgb(149, 177, 199);
-    --color-fondo: rgb(250, 231, 201);
-    --color-blanco: rgb(255, 255, 255);
-    --color-negro-semistransparente: rgba(0, 0, 0, 0.5);
-    --color-negro-semistransparente-suave: rgba(0, 0, 0, 0.1);
-    --color-borde: #ccc;
+@use "../base/variables" as variable;
+@use "sass:map";
 
-    --bs-nav-link-color: var(--color-blanco);
+:root {
+    --bs-nav-link-color: #{map.get(variable.$colores, blanco)};
 }
 
 body {
-    background-color: var(--color-blanco);
-    color: var(--color-secundario);
+    background-color: map.get(variable.$colores, blanco);
+    color: map.get(variable.$colores, secundario);
     font-family: "GeneralSans-Regular";
     box-sizing: border-box;
     margin: 0;
@@ -43,10 +36,10 @@ body {
 }
 
 .link {
-    color: var(--color-secundario);
+    color: map.get(variable.$colores, secundario);
     font-size: 1rem;
 }
 
 .link:hover {
-    color: var(--color-terciario);
+    color: map.get(variable.$colores, terciario);
 }

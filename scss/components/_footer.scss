@@ -1,6 +1,9 @@
+@use "../base/variables" as variable;
+@use "sass:map";
+
 .footer {
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
+    background-color: map.get(variable.$colores, primario);
+    color: map.get(variable.$colores, blanco);
 }
 
 .footer__container {
@@ -16,12 +19,12 @@
 }
 
 .footer__container--social-links a {
-    color: var(--color-blanco);
+    color: map.get(variable.$colores, blanco);
     transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .footer__container--social-links a:hover {
-    color: var(--color-terciario);
+    color: map.get(variable.$colores, terciario);
     transform: scale(1.1);
 }
 
@@ -31,7 +34,7 @@
 }
 
 .footer__container--derechos {
-    border-top: 1px solid var(--color-blanco);
+    border-top: 1px solid map.get(variable.$colores, blanco);
 }
 
 .footer__nav {
@@ -40,13 +43,13 @@
 
 .footer__nav__nav-link {
     display: inline;
-    color: var(--color-blanco);
+    color: map.get(variable.$colores, blanco);
 }
 
 .footer__nav__nav-link.active {
-    color: var(--color-terciario) !important;
+    color: map.get(variable.$colores, terciario) !important;
 }
 
 .footer__nav__nav-link:hover {
-    color: var(--color-terciario);
+    color: map.get(variable.$colores, terciario);
 }

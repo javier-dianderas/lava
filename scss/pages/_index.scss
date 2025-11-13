@@ -1,10 +1,13 @@
+@use "../base/variables" as variable;
+@use "sass:map";
+
 .inicio__banner {
     height: 300px;
     object-fit: cover;
 }
 
 .inicio__banner-caption {
-    background-color: var(--color-negro-semistransparente);
+    background-color: map.get(variable.$colores, negro-semistransparente);
     right: 0;
     left: 0;
     bottom: 0;
@@ -32,9 +35,9 @@
 
 /* inicio - sección servicios */
 .inicio__container-servicio-cards>a>article {
-    background-color: var(--color-primario-semitransparente);
-    color: var(--color-blanco);
-    box-shadow: 0 2px 6px var(--color-negro-semistransparente-suave);
+    background-color: map.get(variable.$colores, primario-semitransparente);
+    color: map.get(variable.$colores, blanco);
+    box-shadow: 0 2px 6px map.get(variable.$colores, negro-semistransparente-suave);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     overflow: hidden;
     height: 100%;
@@ -43,7 +46,7 @@
 
 .inicio__container-servicio-cards>a>article:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px var(--color-negro-semistransparente);
+    box-shadow: 0 6px 12px map.get(variable.$colores, negro-semistransparente);
 }
 
 .inicio__container-servicio-cards>a>article>img {
@@ -54,7 +57,7 @@
 
 .inicio__container-servicio-cards>a>article>div {
     padding: 0.75rem 1rem;
-    color: var(--color-blanco);
+    color: map.get(variable.$colores, blanco);
 }
 
 .inicio__container-servicio-cards>a>article>div>span:nth-child(1) {
@@ -92,12 +95,12 @@
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 2px 6px var(--color-negro-semistransparente-suave);
+    box-shadow: 0 2px 6px map.get(variable.$colores, negro-semistransparente-suave);
 }
 
 .inicio__container-portafolio-cards>a>article:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px var(--color-negro-semistransparente);
+    box-shadow: 0 6px 12px map.get(variable.$colores, negro-semistransparente);
 }
 
 .inicio__container-portafolio-cards>a>article>img {
@@ -112,8 +115,8 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: var(--color-negro-semistransparente);
-    color: var(--color-blanco);
+    background: map.get(variable.$colores, negro-semistransparente);
+    color: map.get(variable.$colores, blanco);
     padding: 15px 20px;
 }
 
