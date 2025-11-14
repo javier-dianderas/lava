@@ -1,55 +1,142 @@
 @use "../base/variables" as variable;
 @use "sass:map";
 
-.footer {
-    background-color: map.get(variable.$colores, primario);
-    color: map.get(variable.$colores, blanco);
+footer {
+    &.footer {
+        background-color: map.get(variable.$colores, primario);
+        color: map.get(variable.$colores, blanco);
+    }
+
+    div {
+        &.footer__container {
+            max-width: 1024px;
+        }
+
+        div {
+            div {
+                img {
+                    height: 24px;
+                }
+            }
+
+            div {
+                h4 {
+                    font-size: 1rem;
+                }
+
+                ul {
+                    &.footer__nav {
+                        --bs-nav-link-padding-x: 0;
+                    }
+
+                    li {
+                        a {
+                            &.footer__nav__nav-link {
+                                display: inline;
+                                color: map.get(variable.$colores, blanco);
+
+                                &:hover {
+                                    color: map.get(variable.$colores, terciario);
+                                }
+
+                                &.active {
+                                    color: map.get(variable.$colores, terciario) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            div {
+                h4 {
+                    font-size: 1rem;
+                }
+
+                div {
+                    &.footer__container--contacto {
+                        grid-template-columns: auto 1fr;
+                        grid-template-rows: repeat(3, 30px);
+                    }
+                }
+            }
+
+            div {
+                h4 {
+                    font-size: 1rem;
+                }
+
+                div {
+                    &.footer__container--social-links a {
+                        color: map.get(variable.$colores, blanco);
+                        transition: color 0.2s ease, transform 0.2s ease;
+
+                        &:hover {
+                            color: map.get(variable.$colores, terciario);
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+
+        div {
+            &.footer__container--derechos {
+                border-top: 1px solid map.get(variable.$colores, blanco);
+            }
+        }
+    }
 }
 
-.footer__container {
-    max-width: 1024px;
-}
+// .footer {
+//     background-color: map.get(variable.$colores, primario);
+//     color: map.get(variable.$colores, blanco);
+// }
 
-.footer__container p {
-    font-size: 1rem;
-}
+// .footer__container {
+//     max-width: 1024px;
+// }
 
-.footer__container h4 {
-    font-size: 1rem;
-}
+// .footer__container p {
+//     font-size: 1rem;
+// }
 
-.footer__container--social-links a {
-    color: map.get(variable.$colores, blanco);
-    transition: color 0.2s ease, transform 0.2s ease;
-}
+// .footer__container h4 {
+//     font-size: 1rem;
+// }
 
-.footer__container--social-links a:hover {
-    color: map.get(variable.$colores, terciario);
-    transform: scale(1.1);
-}
+// .footer__container--social-links a {
+//     color: map.get(variable.$colores, blanco);
+//     transition: color 0.2s ease, transform 0.2s ease;
+// }
 
-.footer__container--contacto {
-    grid-template-columns: auto 1fr;
-    grid-template-rows: repeat(3, 30px);
-}
+// .footer__container--social-links a:hover {
+//     color: map.get(variable.$colores, terciario);
+//     transform: scale(1.1);
+// }
 
-.footer__container--derechos {
-    border-top: 1px solid map.get(variable.$colores, blanco);
-}
+// .footer__container--contacto {
+//     grid-template-columns: auto 1fr;
+//     grid-template-rows: repeat(3, 30px);
+// }
 
-.footer__nav {
-    --bs-nav-link-padding-x: 0;
-}
+// .footer__container--derechos {
+//     border-top: 1px solid map.get(variable.$colores, blanco);
+// }
 
-.footer__nav__nav-link {
-    display: inline;
-    color: map.get(variable.$colores, blanco);
-}
+// .footer__nav {
+//     --bs-nav-link-padding-x: 0;
+// }
 
-.footer__nav__nav-link.active {
-    color: map.get(variable.$colores, terciario) !important;
-}
+// .footer__nav__nav-link {
+//     display: inline;
+//     color: map.get(variable.$colores, blanco);
+// }
 
-.footer__nav__nav-link:hover {
-    color: map.get(variable.$colores, terciario);
-}
+// .footer__nav__nav-link.active {
+//     color: map.get(variable.$colores, terciario) !important;
+// }
+
+// .footer__nav__nav-link:hover {
+//     color: map.get(variable.$colores, terciario);
+// }
