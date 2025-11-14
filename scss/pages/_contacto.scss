@@ -1,24 +1,50 @@
 @use "../base/variables" as variable;
 @use "sass:map";
 
-.contacto__form>div.form-floating>textarea.form-control {
-    height: 8rem !important;
-}
+main {
+    section {
+        div {
+            div {
+                &.contacto__intro {
+                    max-width: 600px;
+                }
 
-.contacto__form>div.form-floating>label.form-label {
-    color: map.get(variable.$colores, secundario);
-}
+            }
+        }
 
-.contacto__intro,
-.contacto__form {
-    max-width: 600px;
-}
+        div {
+            form {
+                &.contacto__form {
+                    max-width: 600px;
 
-.contacto__form>div:last-child>button {
-    --bs-btn-color: #{map.get(variable.$colores, blanco)};
-    --bs-btn-bg: #{map.get(variable.$colores, primario)};
-    --bs-btn-border-color: #{map.get(variable.$colores, primario)};
-    --bs-btn-hover-color: #{map.get(variable.$colores, terciario)};
-    --bs-btn-hover-bg: #{map.get(variable.$colores, secundario)};
-    --bs-btn-hover-border-color: #{map.get(variable.$colores, secundario)};
+                    div {
+                        &.form-floating {
+                            label {
+                                &.form-label {
+                                    color: map.get(variable.$colores, secundario);
+                                }
+                            }
+
+                            textarea {
+                                &.form-control {
+                                    height: 8rem !important;
+                                }
+                            }
+                        }
+
+                        &:last-child {
+                            button {
+                                --bs-btn-color: #{map.get(variable.$colores, blanco)};
+                                --bs-btn-bg: #{map.get(variable.$colores, primario)};
+                                --bs-btn-border-color: #{map.get(variable.$colores, primario)};
+                                --bs-btn-hover-color: #{map.get(variable.$colores, terciario)};
+                                --bs-btn-hover-bg: #{map.get(variable.$colores, secundario)};
+                                --bs-btn-hover-border-color: #{map.get(variable.$colores, secundario)};
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

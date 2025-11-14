@@ -139,20 +139,19 @@ footer div div.footer__container--derechos {
   border-top: 1px solid rgb(255, 255, 255);
 }
 
-.contacto__form > div.form-floating > textarea.form-control {
-  height: 8rem !important;
-}
-
-.contacto__form > div.form-floating > label.form-label {
-  color: rgb(76, 5, 13);
-}
-
-.contacto__intro,
-.contacto__form {
+main section div div.contacto__intro {
   max-width: 600px;
 }
-
-.contacto__form > div:last-child > button {
+main section div form.contacto__form {
+  max-width: 600px;
+}
+main section div form.contacto__form div.form-floating label.form-label {
+  color: rgb(76, 5, 13);
+}
+main section div form.contacto__form div.form-floating textarea.form-control {
+  height: 8rem !important;
+}
+main section div form.contacto__form div:last-child button {
   --bs-btn-color: rgb(255, 255, 255);
   --bs-btn-bg: rgb(200, 41, 37);
   --bs-btn-border-color: rgb(200, 41, 37);
