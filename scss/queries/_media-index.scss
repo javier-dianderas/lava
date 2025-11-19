@@ -1,55 +1,154 @@
 /* sm */
 @media(min-width: 576px) {
-    .inicio__banner-caption>span:nth-child(1) {
-        font-size: 1.75rem;
+    main {
+        section {
+            div {
+                div {
+                    div {
+                        div {
+                            span {
+                                &:nth-child(1) {
+                                    font-size: 1.75rem;
+                                }
+
+                                &:nth-child(2) {
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                /* inicio - sección nosotros */
+                &.inicio__container-nosotros {
+                    span {
+                        font-size: 1.25rem;
+                    }
+                }
+
+                /* inicio - sección servicios */
+                &.inicio__container-servicio-cards {
+                    a {
+                        width: auto;
+
+                        article {
+                            width: 230px;
+                        }
+                    }
+                }
+
+                &.inicio__container-portafolio-cards {
+                    a {
+                        width: auto;
+
+                        article {
+                            width: 300px;
+
+                            img {
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            h3 {
+                &.inicio__title {
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 
-    .inicio__banner-caption>span:nth-child(2) {
-        font-size: 1.5rem;
-    }
+    // .inicio__banner-caption>span:nth-child(1) {
+    //     font-size: 1.75rem;
+    // }
 
-    .inicio__title {
-        font-size: 1.5rem;
-    }
+    // .inicio__banner-caption>span:nth-child(2) {
+    //     font-size: 1.5rem;
+    // }
 
-    .inicio__container-nosotros>span {
-        font-size: 1.25rem;
-    }
+    // .inicio__title {
+    //     font-size: 1.5rem;
+    // }
 
-    .inicio__container-servicio-cards>a,
-    .inicio__container-portafolio-cards>a {
-        width: auto;
-    }
+    // .inicio__container-nosotros>span {
+    //     font-size: 1.25rem;
+    // }
 
-    .inicio__container-servicio-cards>a>article {
-        width: 230px;
-    }
+    // .inicio__container-servicio-cards>a,
+    // .inicio__container-portafolio-cards>a {
+    //     width: auto;
+    // }
 
-    .inicio__container-portafolio-cards>a>article {
-        width: 300px;
-    }
+    // .inicio__container-servicio-cards>a>article {
+    //     width: 230px;
+    // }
 
-    .inicio__container-portafolio-cards>a>article>img {
-        height: auto;
-    }
+    // .inicio__container-portafolio-cards>a>article {
+    //     width: 300px;
+    // }
+
+    // .inicio__container-portafolio-cards>a>article>img {
+    //     height: auto;
+    // }
 }
 
 /* md */
 @media(min-width: 768px) {
-    .inicio__banner {
-        height: 400px;
+    main {
+        section {
+            div {
+                div {
+                    div {
+                        img {
+                            &.inicio__banner {
+                                height: 400px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+
+    // .inicio__banner {
+    //     height: 400px;
+    // }
 }
 
 /* lg */
 @media(min-width: 992px) {
-    .inicio__banner-caption>span:nth-child(1) {
-        display: block;
-        font-weight: bold;
-        font-size: 2rem;
+
+    main {
+        section {
+            div {
+                div {
+                    div {
+                        div {
+                            span {
+                                &:nth-child(1) {
+                                    font-size: 2rem;
+                                }
+
+                                &:nth-child(2) {
+                                    font-size: 1.75rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    .inicio__banner-caption>span:nth-child(2) {
-        font-size: 1.75rem;
-    }
+    // .inicio__banner-caption>span:nth-child(1) {
+    //     display: block;
+    //     font-weight: bold;
+    //     font-size: 2rem;
+    // }
+
+    // .inicio__banner-caption>span:nth-child(2) {
+    //     font-size: 1.75rem;
+    // }
 }

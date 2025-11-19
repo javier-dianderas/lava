@@ -160,40 +160,43 @@ main section div form.contacto__form div:last-child button {
   --bs-btn-hover-border-color: rgb(76, 5, 13);
 }
 
-.inicio__banner {
+main section div div div img.inicio__banner {
   height: 300px;
   object-fit: cover;
 }
-
-.inicio__banner-caption {
+main section div div div div.inicio__banner-caption {
   background-color: rgba(0, 0, 0, 0.5);
   right: 0;
   left: 0;
   bottom: 0;
   padding-bottom: 2.5rem;
 }
-
-.inicio__banner-caption > span:nth-child(1) {
+main section div div div div span:nth-child(1) {
   display: block;
   font-weight: bold;
   font-size: 1.25rem;
 }
-
-.inicio__banner-caption > span:nth-child(2) {
+main section div div div div span:nth-child(2) {
   font-size: 1rem;
 }
-
-.inicio__container-servicio-cards {
+main section div {
+  /* inicio - sección nosotros */
+}
+main section div.inicio__container-nosotros span {
+  font-size: 1rem;
+}
+main section div {
+  /* inicio - sección servicios */
+}
+main section div.inicio__container-servicio-cards {
   gap: 20px;
 }
-
-/* inicio - sección nosotros */
-.inicio__container-nosotros > span {
-  font-size: 1rem;
+main section div.inicio__container-servicio-cards a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
 }
-
-/* inicio - sección servicios */
-.inicio__container-servicio-cards > a > article {
+main section div.inicio__container-servicio-cards a article {
   background-color: rgb(200, 41, 37);
   color: rgb(255, 255, 255);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -202,74 +205,59 @@ main section div form.contacto__form div:last-child button {
   height: 100%;
   width: 100%;
 }
-
-.inicio__container-servicio-cards > a > article:hover {
+main section div.inicio__container-servicio-cards a article:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
-
-.inicio__container-servicio-cards > a > article > img {
+main section div.inicio__container-servicio-cards a article img {
   width: 100%;
   height: 160px;
   object-fit: cover;
 }
-
-.inicio__container-servicio-cards > a > article > div {
+main section div.inicio__container-servicio-cards a article div {
   padding: 0.75rem 1rem;
   color: rgb(255, 255, 255);
 }
-
-.inicio__container-servicio-cards > a > article > div > span:nth-child(1) {
+main section div.inicio__container-servicio-cards a article div span:nth-child(1) {
   display: block;
   font-weight: bold;
   font-size: 1.2rem;
 }
-
-.inicio__title {
-  font-size: 1.25rem;
-  font-weight: bold;
+main section div.inicio__container-servicio-cards a article div span:nth-child(2) {
+  font-size: 1rem;
 }
-
-.inicio__logos {
+main section div.inicio__logos {
   gap: 25px;
 }
-
-.inicio__logos > img {
+main section div.inicio__logos img {
   width: 150px;
 }
-
-.inicio__container-portafolio-cards {
+main section div.inicio__container-portafolio-cards {
   gap: 20px;
 }
-
-.inicio__container-servicio-cards > a,
-.inicio__container-portafolio-cards > a {
+main section div.inicio__container-portafolio-cards a {
   text-decoration: none;
   display: block;
   width: 100%;
 }
-
-.inicio__container-portafolio-cards > a > article {
+main section div.inicio__container-portafolio-cards a article {
   position: relative;
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
-.inicio__container-portafolio-cards > a > article:hover {
+main section div.inicio__container-portafolio-cards a article:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
-
-.inicio__container-portafolio-cards > a > article > img {
+main section div.inicio__container-portafolio-cards a article img {
   width: 100%;
   height: 220px;
   display: block;
   object-fit: cover;
 }
-
-.inicio__container-portafolio-cards > a > article > div {
+main section div.inicio__container-portafolio-cards a article div {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -278,16 +266,20 @@ main section div form.contacto__form div:last-child button {
   color: rgb(255, 255, 255);
   padding: 15px 20px;
 }
-
-.inicio__container-portafolio-cards > a > article > div > span:nth-child(1) {
+main section div.inicio__container-portafolio-cards a article div span:nth-child(1) {
   font-size: 1.4rem;
   display: block;
 }
-
-.inicio__container-portafolio-cards > a > article > div > span:nth-child(2) {
+main section div.inicio__container-portafolio-cards a article div span:nth-child(2) {
   font-size: 1rem;
 }
+main section h3.inicio__title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
 
+/* inicio - sección nosotros */
+/* inicio - sección servicios */
 main section.nosotros__intro {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
@@ -539,46 +531,52 @@ main section div ul {
 }
 /* sm */
 @media (min-width: 576px) {
-  .inicio__banner-caption > span:nth-child(1) {
+  main section div div div div span:nth-child(1) {
     font-size: 1.75rem;
   }
-  .inicio__banner-caption > span:nth-child(2) {
+  main section div div div div span:nth-child(2) {
     font-size: 1.5rem;
   }
-  .inicio__title {
-    font-size: 1.5rem;
+  main section div {
+    /* inicio - sección nosotros */
   }
-  .inicio__container-nosotros > span {
+  main section div.inicio__container-nosotros span {
     font-size: 1.25rem;
   }
-  .inicio__container-servicio-cards > a,
-  .inicio__container-portafolio-cards > a {
+  main section div {
+    /* inicio - sección servicios */
+  }
+  main section div.inicio__container-servicio-cards a {
     width: auto;
   }
-  .inicio__container-servicio-cards > a > article {
+  main section div.inicio__container-servicio-cards a article {
     width: 230px;
   }
-  .inicio__container-portafolio-cards > a > article {
+  main section div.inicio__container-portafolio-cards a {
+    width: auto;
+  }
+  main section div.inicio__container-portafolio-cards a article {
     width: 300px;
   }
-  .inicio__container-portafolio-cards > a > article > img {
+  main section div.inicio__container-portafolio-cards a article img {
     height: auto;
+  }
+  main section h3.inicio__title {
+    font-size: 1.5rem;
   }
 }
 /* md */
 @media (min-width: 768px) {
-  .inicio__banner {
+  main section div div div img.inicio__banner {
     height: 400px;
   }
 }
 /* lg */
 @media (min-width: 992px) {
-  .inicio__banner-caption > span:nth-child(1) {
-    display: block;
-    font-weight: bold;
+  main section div div div div span:nth-child(1) {
     font-size: 2rem;
   }
-  .inicio__banner-caption > span:nth-child(2) {
+  main section div div div div span:nth-child(2) {
     font-size: 1.75rem;
   }
 }
