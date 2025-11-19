@@ -1,63 +1,155 @@
 /* sm */
 @media(min-width: 576px) {
-    .servicios {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas:
-            "social imagen-social"
-            "imagen-branding branding"
-            "audiovisual imagen-audiovisual"
-            "imagen-disenio disenio"
-            "fotografia imagen-fotografia";
+    main {
+        section {
+            &.servicios {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(5, auto);
+                grid-template-areas:
+                    "social imagen-social"
+                    "imagen-branding branding"
+                    "audiovisual imagen-audiovisual"
+                    "imagen-disenio disenio"
+                    "fotografia imagen-fotografia";
+            }
+
+            div {
+                h2 {
+                    font-size: 1.8rem;
+                }
+
+                span {
+                    font-size: 1.25rem;
+                }
+
+                ul {
+                    font-size: 1.25rem;
+                }
+            }
+        }
     }
 
-    .servicios__social h2,
-    .servicios__branding h2,
-    .servicios__audiovisual h2,
-    .servicios__disenio h2,
-    .servicios__fotografia h2 {
-        font-size: 1.8rem;
-    }
+    // .servicios {
+    //     grid-template-columns: 1fr 1fr;
+    //     grid-template-rows: repeat(5, auto);
+    //     grid-template-areas:
+    //         "social imagen-social"
+    //         "imagen-branding branding"
+    //         "audiovisual imagen-audiovisual"
+    //         "imagen-disenio disenio"
+    //         "fotografia imagen-fotografia";
+    // }
 
-    .servicios__social span,
-    .servicios__branding span,
-    .servicios__audiovisual span,
-    .servicios__disenio span,
-    .servicios__fotografia span,
-    .servicios__social ul,
-    .servicios__branding ul,
-    .servicios__audiovisual ul,
-    .servicios__disenio ul,
-    .servicios__fotografia ul {
-        font-size: 1.25rem;
-    }
+    // .servicios__social h2,
+    // .servicios__branding h2,
+    // .servicios__audiovisual h2,
+    // .servicios__disenio h2,
+    // .servicios__fotografia h2 {
+    //     font-size: 1.8rem;
+    // }
+
+    // .servicios__social span,
+    // .servicios__branding span,
+    // .servicios__audiovisual span,
+    // .servicios__disenio span,
+    // .servicios__fotografia span,
+    // .servicios__social ul,
+    // .servicios__branding ul,
+    // .servicios__audiovisual ul,
+    // .servicios__disenio ul,
+    // .servicios__fotografia ul {
+    //     font-size: 1.25rem;
+    // }
 }
 
 /* lg */
 @media(min-width: 992px) {
-    .servicios__img--size {
-        width: 333px;
-        height: 500px;
+    main {
+        section {
+            div {
+                &.servicios__imagen-social {
+                    img {
+                        &.servicios__img--size {
+                            width: 333px;
+                            height: 500px;
+                        }
+                    }
+                }
+
+                &.servicios__imagen-branding {
+                    img {
+                        &.servicios__img--size {
+                            width: 333px;
+                            height: 500px;
+                        }
+                    }
+                }
+
+                &.servicios__imagen-audiovisual {
+                    img {
+                        &.servicios__img--size {
+                            width: 333px;
+                            height: 500px;
+                        }
+                    }
+                }
+
+                &.servicios__imagen-disenio {
+                    img {
+                        &.servicios__img--size {
+                            width: 333px;
+                            height: 500px;
+                        }
+                    }
+                }
+
+                &.servicios__imagen-fotografia {
+                    img {
+                        &.servicios__img--size {
+                            width: 333px;
+                            height: 500px;
+                        }
+                    }
+                }
+
+                h2 {
+                    font-size: 2rem;
+                }
+
+                span {
+                    font-size: 1.5rem;
+                }
+
+                ul {
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 
-    .servicios__social h2,
-    .servicios__branding h2,
-    .servicios__audiovisual h2,
-    .servicios__disenio h2,
-    .servicios__fotografia h2 {
-        font-size: 2rem;
-    }
+    // .servicios__img--size {
+    //     width: 333px;
+    //     height: 500px;
+    // }
 
-    .servicios__social span,
-    .servicios__branding span,
-    .servicios__audiovisual span,
-    .servicios__disenio span,
-    .servicios__fotografia span,
-    .servicios__social ul,
-    .servicios__branding ul,
-    .servicios__audiovisual ul,
-    .servicios__disenio ul,
-    .servicios__fotografia ul {
-        font-size: 1.5rem;
-    }
+    // .servicios__social h2,
+    // .servicios__branding h2,
+    // .servicios__audiovisual h2,
+    // .servicios__disenio h2,
+    // .servicios__fotografia h2 {
+    //     font-size: 2rem;
+    // }
+
+    // .servicios__social span,
+    // .servicios__branding span,
+    // .servicios__audiovisual span,
+    // .servicios__disenio span,
+    // .servicios__fotografia span,
+    // .servicios__social ul,
+    // .servicios__branding ul,
+    // .servicios__audiovisual ul,
+    // .servicios__disenio ul,
+    // .servicios__fotografia ul {
+    //     font-size: 1.5rem;
+    // }
 }
