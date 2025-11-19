@@ -1,4 +1,5 @@
 @use "../base/variables" as variable;
+@use "../utilities/mixin";
 @use "sass:map";
 
 header {
@@ -15,7 +16,8 @@ header {
         div {
             a {
                 img {
-                    height: 24px;
+                    // height: 24px;
+                    @include mixin.size(null, 24px);
                 }
             }
 
@@ -42,7 +44,8 @@ header {
                     }
 
                     img {
-                        height: 24px;
+                        // height: 24px;
+                        @include mixin.size(null, 24px);
                     }
 
                     button {

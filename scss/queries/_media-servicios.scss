@@ -1,3 +1,5 @@
+@use "../utilities/mixin";
+
 /* sm */
 @media(min-width: 576px) {
     main {
@@ -70,8 +72,9 @@
                 &.servicios__imagen-social {
                     img {
                         &.servicios__img--size {
-                            width: 333px;
-                            height: 500px;
+                            // width: 333px;
+                            // height: 500px;
+                            @include mixin.size(333px, 500px);
                         }
                     }
                 }
@@ -79,8 +82,9 @@
                 &.servicios__imagen-branding {
                     img {
                         &.servicios__img--size {
-                            width: 333px;
-                            height: 500px;
+                            // width: 333px;
+                            // height: 500px;
+                            @include mixin.size(333px, 500px);
                         }
                     }
                 }
@@ -88,8 +92,9 @@
                 &.servicios__imagen-audiovisual {
                     img {
                         &.servicios__img--size {
-                            width: 333px;
-                            height: 500px;
+                            // width: 333px;
+                            // height: 500px;
+                            @include mixin.size(333px, 500px);
                         }
                     }
                 }
@@ -97,8 +102,9 @@
                 &.servicios__imagen-disenio {
                     img {
                         &.servicios__img--size {
-                            width: 333px;
-                            height: 500px;
+                            // width: 333px;
+                            // height: 500px;
+                            @include mixin.size(333px, 500px);
                         }
                     }
                 }
@@ -106,8 +112,9 @@
                 &.servicios__imagen-fotografia {
                     img {
                         &.servicios__img--size {
-                            width: 333px;
-                            height: 500px;
+                            // width: 333px;
+                            // height: 500px;
+                            @include mixin.size(333px, 500px);
                         }
                     }
                 }

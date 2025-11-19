@@ -1,4 +1,5 @@
 @use "../base/variables" as variable;
+@use "../utilities/mixin";
 @use "sass:map";
 
 footer {
@@ -15,7 +16,8 @@ footer {
         div {
             div {
                 img {
-                    height: 24px;
+                    // height: 24px;
+                    @include mixin.size(null, 24px);
                 }
             }
 

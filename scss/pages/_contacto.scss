@@ -1,4 +1,5 @@
 @use "../base/variables" as variable;
+@use "../utilities/mixin";
 @use "sass:map";
 
 main {
@@ -27,7 +28,8 @@ main {
 
                             textarea {
                                 &.form-control {
-                                    height: 8rem !important;
+                                    // height: 8rem !important;
+                                    @include mixin.size(null, 8rem !important);
                                 }
                             }
                         }
