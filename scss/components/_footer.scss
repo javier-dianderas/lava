@@ -57,8 +57,10 @@ footer {
 
                 div {
                     &.footer__container--contacto {
-                        grid-template-columns: auto 1fr;
-                        grid-template-rows: repeat(3, 30px);
+                        // grid-template-columns: auto 1fr;
+                        // grid-template-rows: repeat(3, 30px);
+
+                        @include mixin.grid(repeat(3, 30px), auto 1fr, null, null, null);
                     }
                 }
             }

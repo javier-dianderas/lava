@@ -3,10 +3,22 @@
 main {
     section {
         &.servicios {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(10, auto);
-            row-gap: 1.5rem;
-            grid-template-areas:
+            // grid-template-columns: 1fr;
+            // grid-template-rows: repeat(10, auto);
+            // row-gap: 1.5rem;
+            // grid-template-areas:
+            //     "social"
+            //     "imagen-social"
+            //     "branding"
+            //     "imagen-branding"
+            //     "audiovisual"
+            //     "imagen-audiovisual"
+            //     "disenio"
+            //     "imagen-disenio"
+            //     "fotografia"
+            //     "imagen-fotografia";
+
+            @include mixin.grid(repeat(10, auto), 1fr, 1.5rem, null,
                 "social"
                 "imagen-social"
                 "branding"
@@ -16,7 +28,7 @@ main {
                 "disenio"
                 "imagen-disenio"
                 "fotografia"
-                "imagen-fotografia";
+                "imagen-fotografia");
         }
 
         div {

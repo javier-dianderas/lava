@@ -1,13 +1,19 @@
+@use "../utilities/mixin";
+
 /* sm */
 @media(min-width: 576px) {
     main {
         section {
             &.nosotros__intro {
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: auto auto;
-                grid-template-areas:
+                // grid-template-columns: 1fr 1fr;
+                // grid-template-rows: auto auto;
+                // grid-template-areas:
+                //     "titulo imagen-titulo"
+                //     "imagen-dedicatoria dedicatoria";
+
+                @include mixin.grid(auto auto, 1fr 1fr, null, null,
                     "titulo imagen-titulo"
-                    "imagen-dedicatoria dedicatoria";
+                    "imagen-dedicatoria dedicatoria");
             }
 
             div {

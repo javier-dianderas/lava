@@ -121,8 +121,8 @@ footer div div div h4 {
   font-size: 1rem;
 }
 footer div div div div.footer__container--contacto {
-  grid-template-columns: auto 1fr;
   grid-template-rows: repeat(3, 30px);
+  grid-template-columns: auto 1fr;
 }
 footer div div div h4 {
   font-size: 1rem;
@@ -281,8 +281,8 @@ main section h3.inicio__title {
 /* inicio - sección nosotros */
 /* inicio - sección servicios */
 main section.nosotros__intro {
-  grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
+  grid-template-columns: 1fr;
   row-gap: 1.5rem;
   grid-template-areas: "titulo" "imagen-titulo" "dedicatoria" "imagen-dedicatoria";
 }
@@ -330,9 +330,10 @@ main section div.nosotros__logos img {
 main div div.portafolio {
   max-width: 1200px;
   padding: 15px;
-  gap: 15px;
-  grid-template-columns: 1fr;
   grid-template-rows: repeat(8, 300px);
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+  column-gap: 15px;
   grid-template-areas: "proyecto1" "proyecto2" "proyecto3" "proyecto4" "proyecto5" "proyecto6" "proyecto7" "proyecto8";
 }
 main div div article:nth-child(1) {
@@ -457,8 +458,8 @@ main div div article div span:nth-child(2) {
 }
 
 main section.servicios {
-  grid-template-columns: 1fr;
   grid-template-rows: repeat(10, auto);
+  grid-template-columns: 1fr;
   row-gap: 1.5rem;
   grid-template-areas: "social" "imagen-social" "branding" "imagen-branding" "audiovisual" "imagen-audiovisual" "disenio" "imagen-disenio" "fotografia" "imagen-fotografia";
 }
@@ -583,8 +584,8 @@ main section div ul {
 /* sm */
 @media (min-width: 576px) {
   main section.nosotros__intro {
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "titulo imagen-titulo" "imagen-dedicatoria dedicatoria";
   }
   main section div.nosotros__intro--titulo h2 {
@@ -632,8 +633,8 @@ main section div ul {
 /* md */
 @media (min-width: 768px) {
   main div div.portafolio {
-    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 300px);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "proyecto1 proyecto2" "proyecto3 proyecto4" "proyecto5 proyecto6" "proyecto7 proyecto8";
   }
   main div div article div span:nth-child(1) {
@@ -646,8 +647,8 @@ main section div ul {
 /* lg */
 @media (min-width: 992px) {
   main div div.portafolio {
-    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 300px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "proyecto1 proyecto1 proyecto2" "proyecto3 proyecto4 proyecto4" "proyecto5 proyecto5 proyecto6" "proyecto7 proyecto8 proyecto8";
   }
   main div div article div span:nth-child(1) {
@@ -660,8 +661,8 @@ main section div ul {
 /* sm */
 @media (min-width: 576px) {
   main section.servicios {
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, auto);
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "social imagen-social" "imagen-branding branding" "audiovisual imagen-audiovisual" "imagen-disenio disenio" "fotografia imagen-fotografia";
   }
   main section div h2 {
