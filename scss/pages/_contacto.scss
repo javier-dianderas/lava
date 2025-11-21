@@ -1,5 +1,6 @@
 @use "../base/variables" as variable;
 @use "../utilities/mixin";
+@use "../utilities/extend";
 @use "sass:map";
 
 main {
@@ -35,13 +36,21 @@ main {
                         }
 
                         &:last-child {
+
+                            // button {
+                            //     --bs-btn-color: #{map.get(variable.$colores, blanco)};
+                            //     --bs-btn-bg: #{map.get(variable.$colores, primario)};
+                            //     --bs-btn-border-color: #{map.get(variable.$colores, primario)};
+                            //     --bs-btn-hover-color: #{map.get(variable.$colores, terciario)};
+                            //     --bs-btn-hover-bg: #{map.get(variable.$colores, secundario)};
+                            //     --bs-btn-hover-border-color: #{map.get(variable.$colores, secundario)};
+                            // }
                             button {
-                                --bs-btn-color: #{map.get(variable.$colores, blanco)};
-                                --bs-btn-bg: #{map.get(variable.$colores, primario)};
-                                --bs-btn-border-color: #{map.get(variable.$colores, primario)};
-                                --bs-btn-hover-color: #{map.get(variable.$colores, terciario)};
-                                --bs-btn-hover-bg: #{map.get(variable.$colores, secundario)};
-                                --bs-btn-hover-border-color: #{map.get(variable.$colores, secundario)};
+                                &.button_primary {
+                                    @extend %button_base;
+                                    --bs-btn-bg: #{map.get(variable.$colores, primario)};
+                                    --bs-btn-border-color: #{map.get(variable.$colores, primario)};
+                                }
                             }
                         }
                     }
