@@ -1,0 +1,26 @@
+//extra small
+@media(min-width: 576px) {
+    header {
+        nav {
+            div {
+                div {
+                    div {
+                        ul {
+                            li {
+                                a {
+                                    &.header__nav__nav-link {
+                                        transition: background-size 0.1s ease-in-out;
+
+                                        &:hover {
+                                            transition: background-size 0.2s ease-in-out;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
