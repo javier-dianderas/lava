@@ -76,55 +76,76 @@
     main {
         section {
             div {
-                &.servicios__imagen-social {
-                    img {
-                        &.servicios__img--size {
-                            // width: 333px;
-                            // height: 500px;
-                            @include mixin.size(333px, 500px);
+
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(6),
+                &:nth-child(7),
+                &:nth-child(10) {
+                    .servicios__card {
+                        @include mixin.size(333px, 500px);
+
+                        .servicios__card-inner {
+                            .servicios__card-back {
+                                $top: 0;
+
+                                @for $i from 1 to 14 {
+                                    span:nth-child(#{$i}) {
+                                        // position: absolute;
+                                        // display: block;
+                                        top: $top + rem;
+                                        // @include mixin.random-position-left(1, 233 - 120);
+                                        @include mixin.random-font-size(0.8, 2.2);
+                                        // font-weight: 300;
+                                        // text-shadow: 1px 0 10px map.get(variable.$colores, negro-semistransparente);
+                                    }
+
+                                    $top: $top + 2.4;
+                                }
+                            }
                         }
                     }
                 }
 
-                &.servicios__imagen-branding {
-                    img {
-                        &.servicios__img--size {
-                            // width: 333px;
-                            // height: 500px;
-                            @include mixin.size(333px, 500px);
-                        }
-                    }
-                }
+                // &.servicios__imagen-social {
+                //     img {
+                //         &.servicios__img--size {
+                //             @include mixin.size(333px, 500px);
+                //         }
+                //     }
+                // }
 
-                &.servicios__imagen-audiovisual {
-                    img {
-                        &.servicios__img--size {
-                            // width: 333px;
-                            // height: 500px;
-                            @include mixin.size(333px, 500px);
-                        }
-                    }
-                }
+                // &.servicios__imagen-branding {
+                //     img {
+                //         &.servicios__img--size {
+                //             @include mixin.size(333px, 500px);
+                //         }
+                //     }
+                // }
 
-                &.servicios__imagen-disenio {
-                    img {
-                        &.servicios__img--size {
-                            // width: 333px;
-                            // height: 500px;
-                            @include mixin.size(333px, 500px);
-                        }
-                    }
-                }
+                // &.servicios__imagen-audiovisual {
+                //     img {
+                //         &.servicios__img--size {
+                //             @include mixin.size(333px, 500px);
+                //         }
+                //     }
+                // }
 
-                &.servicios__imagen-fotografia {
-                    img {
-                        &.servicios__img--size {
-                            // width: 333px;
-                            // height: 500px;
-                            @include mixin.size(333px, 500px);
-                        }
-                    }
-                }
+                // &.servicios__imagen-disenio {
+                //     img {
+                //         &.servicios__img--size {
+                //             @include mixin.size(333px, 500px);
+                //         }
+                //     }
+                // }
+
+                // &.servicios__imagen-fotografia {
+                //     img {
+                //         &.servicios__img--size {
+                //             @include mixin.size(333px, 500px);
+                //         }
+                //     }
+                // }
 
                 h2 {
                     font-size: 2rem;

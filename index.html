@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="assets/css/estilos.css" />
 </head>
 <!-- se agrego para que en pantallas muy grandes el contenido ocupe el 100% del viewport -->
@@ -17,7 +18,7 @@
     <nav class="navbar navbar-expand-md header__nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img class="d-inline-block align-text-top" src="assets/img/inicio/logo_blanco.png" alt="logo">
+          <img id="main-logo" class="d-inline-block align-text-top" src="assets/img/inicio/logo_blanco.png" alt="logo">
         </a>
         <button class="navbar-toggler my-2 py-2 header__nav__navbar-toggler" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -300,13 +301,20 @@
     crossorigin="anonymous"></script>
   <script>
     // se agregó evento para ocultar logo de barra de menu desktop al abrir el menu responsive
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", async function () {
       const offcanvas = document.getElementById("offcanvasNavbar");
       const nav = document.querySelector(".header__nav");
 
       if (offcanvas && nav) {
         offcanvas.addEventListener("show.bs.offcanvas", () => {
-          nav.classList.add("offcanvas-open");
+          const img = document.getElementById("main-logo");
+          img.classList.add("animate__animated");
+          img.classList.add("animate__backOutLeft");
+          setTimeout(() => {
+            nav.classList.add("offcanvas-open");
+            img.classList.remove("animate__backOutLeft");
+            img.classList.remove("animate__animated");
+          }, 1000);
         });
         offcanvas.addEventListener("hidden.bs.offcanvas", () => {
           nav.classList.remove("offcanvas-open");

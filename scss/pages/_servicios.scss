@@ -1,4 +1,6 @@
+@use "../base/variables" as variable;
 @use "../utilities/mixin";
+@use "sass:map";
 
 main {
     section {
@@ -32,82 +34,141 @@ main {
         }
 
         div {
-            &.servicios__social {
+
+            // &.servicios__social {
+            &:nth-child(1) {
                 grid-area: social;
             }
 
-            &.servicios__imagen-social {
+            // &.servicios__imagen-social {
+            &:nth-child(2) {
                 grid-area: imagen-social;
 
-                img {
-                    &.servicios__img--size {
-                        // width: 233px;
-                        // height: 350px;
-                        @include mixin.size(233px, 350px);
-                    }
-                }
+                // img {
+                //     &.servicios__img--size {
+                //         // width: 233px;
+                //         // height: 350px;
+                //         @include mixin.size(233px, 350px);
+                //     }
+                // }
             }
 
-            &.servicios__branding {
+            // &.servicios__branding {
+            &:nth-child(4) {
                 grid-area: branding;
             }
 
-            &.servicios__imagen-branding {
+            // &.servicios__imagen-branding {
+            &:nth-child(3) {
                 grid-area: imagen-branding;
 
-                img {
-                    &.servicios__img--size {
-                        // width: 233px;
-                        // height: 350px;
-                        @include mixin.size(233px, 350px);
-                    }
-                }
+                // img {
+                //     &.servicios__img--size {
+                //         @include mixin.size(233px, 350px);
+                //     }
+                // }
             }
 
-            &.servicios__audiovisual {
+            // &.servicios__audiovisual {
+            &:nth-child(5) {
                 grid-area: audiovisual;
             }
 
-            &.servicios__imagen-audiovisual {
+            // &.servicios__imagen-audiovisual {
+            &:nth-child(6) {
                 grid-area: imagen-audiovisual;
 
-                img {
-                    &.servicios__img--size {
-                        // width: 233px;
-                        // height: 350px;
-                        @include mixin.size(233px, 350px);
-                    }
-                }
+                // img {
+                //     &.servicios__img--size {
+                //         @include mixin.size(233px, 350px);
+                //     }
+                // }
             }
 
-            &.servicios__disenio {
+            // &.servicios__disenio {
+            &:nth-child(8) {
                 grid-area: disenio;
             }
 
-            &.servicios__imagen-disenio {
+            // &.servicios__imagen-disenio {
+            &:nth-child(7) {
                 grid-area: imagen-disenio;
 
-                img {
-                    &.servicios__img--size {
-                        // width: 233px;
-                        // height: 350px;
-                        @include mixin.size(233px, 350px);
-                    }
-                }
+                // img {
+                //     &.servicios__img--size {
+                //         @include mixin.size(233px, 350px);
+                //     }
+                // }
             }
 
-            &.servicios__fotografia {
+            // &.servicios__fotografia {
+            &:nth-child(9) {
                 grid-area: fotografia;
             }
 
-            &.servicios__imagen-fotografia {
+            // &.servicios__imagen-fotografia {
+            &:nth-child(10) {
                 grid-area: imagen-fotografia;
 
-                img {
-                    &.servicios__img--size {
-                        // width: 233px;
-                        // height: 350px;
-                        @include mixin.size(233px, 350px);
+                // img {
+                //     &.servicios__img--size {
+                //         @include mixin.size(233px, 350px);
+                //     }
+                // }
+            }
+
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(10) {
+                .servicios__card {
+                    @include mixin.size(233px, 350px);
+                    perspective: 62rem;
+
+                    &:hover {
+                        .servicios__card-inner {
+                            transform: rotateY(180deg);
+                        }
+                    }
+
+                    .servicios__card-inner {
+                        width: 100%;
+                        height: 100%;
+                        transform-style: preserve-3d;
+                        transition: transform 0.6s;
+                        position: relative;
+
+                        .servicios__card-front,
+                        .servicios__card-back {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            backface-visibility: hidden;
+                        }
+
+                        .servicios__card-back {
+                            transform: rotateY(180deg);
+                            background: map.get(variable.$colores, terciario);
+                            position: relative;
+                            overflow: hidden;
+
+                            $top: 0;
+
+                            @for $i from 1 to 14 {
+                                span:nth-child(#{$i}) {
+                                    position: absolute;
+                                    display: block;
+                                    top: $top + rem;
+                                    @include mixin.random-position-left(1, 233 - 120);
+                                    @include mixin.random-font-size(0.8, 1.4);
+                                    font-weight: 300;
+                                    text-shadow: 1px 0 10px map.get(variable.$colores, negro-semistransparente);
+                                }
+
+                                $top: $top + 1.8;
+                            }
+                        }
                     }
                 }
             }
