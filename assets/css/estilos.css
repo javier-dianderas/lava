@@ -344,108 +344,45 @@ main div div.portafolio {
   column-gap: 15px;
   grid-template-areas: "proyecto1" "proyecto2" "proyecto3" "proyecto4" "proyecto5" "proyecto6" "proyecto7" "proyecto8";
 }
-main div div article:nth-child(1) {
+main div div.portafolio article:nth-child(1) {
   grid-area: proyecto1;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease;
-  z-index: 0;
 }
-main div div article:nth-child(1):hover {
-  transform: scale(1.04);
-  z-index: 10;
-}
-main div div article:nth-child(2) {
+main div div.portafolio article:nth-child(2) {
   grid-area: proyecto2;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease;
-  z-index: 0;
 }
-main div div article:nth-child(2):hover {
-  transform: scale(1.04);
-  z-index: 10;
-}
-main div div article:nth-child(3) {
+main div div.portafolio article:nth-child(3) {
   grid-area: proyecto3;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease;
-  z-index: 0;
 }
-main div div article:nth-child(3):hover {
-  transform: scale(1.04);
-  z-index: 10;
-}
-main div div article:nth-child(4) {
+main div div.portafolio article:nth-child(4) {
   grid-area: proyecto4;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease;
-  z-index: 0;
 }
-main div div article:nth-child(4):hover {
-  transform: scale(1.04);
-  z-index: 10;
-}
-main div div article:nth-child(5) {
+main div div.portafolio article:nth-child(5) {
   grid-area: proyecto5;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease;
-  z-index: 0;
 }
-main div div article:nth-child(5):hover {
-  transform: scale(1.04);
-  z-index: 10;
-}
-main div div article:nth-child(6) {
+main div div.portafolio article:nth-child(6) {
   grid-area: proyecto6;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease;
-  z-index: 0;
 }
-main div div article:nth-child(6):hover {
-  transform: scale(1.04);
-  z-index: 10;
-}
-main div div article:nth-child(7) {
+main div div.portafolio article:nth-child(7) {
   grid-area: proyecto7;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease;
-  z-index: 0;
 }
-main div div article:nth-child(7):hover {
-  transform: scale(1.04);
-  z-index: 10;
-}
-main div div article:nth-child(8) {
+main div div.portafolio article:nth-child(8) {
   grid-area: proyecto8;
+}
+main div div.portafolio article:nth-child(1), main div div.portafolio article:nth-child(2), main div div.portafolio article:nth-child(3), main div div.portafolio article:nth-child(4), main div div.portafolio article:nth-child(5), main div div.portafolio article:nth-child(6), main div div.portafolio article:nth-child(7), main div div.portafolio article:nth-child(8) {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  transition: transform 0.3s ease;
-  z-index: 0;
 }
-main div div article:nth-child(8):hover {
-  transform: scale(1.04);
-  z-index: 10;
-}
-main div div article img {
+main div div.portafolio article img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: transform 0.5s ease;
 }
-main div div article div {
+main div div.portafolio article img:hover {
+  transform: scale(1.1);
+}
+main div div.portafolio article div {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -455,11 +392,11 @@ main div div article div {
   padding: 1rem;
   box-sizing: border-box;
 }
-main div div article div span:nth-child(1) {
+main div div.portafolio article div span:nth-child(1) {
   font-size: 1.7rem;
   display: block;
 }
-main div div article div span:nth-child(2) {
+main div div.portafolio article div span:nth-child(2) {
   font-size: 1.2rem;
   display: block;
   font-weight: bold;
@@ -537,8 +474,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 0rem;
-  left: 6.6px;
-  font-size: 1.214rem;
+  left: 18.92px;
+  font-size: 1.316rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -546,8 +483,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 1.8rem;
-  left: 69.32px;
-  font-size: 1.256rem;
+  left: 51.4px;
+  font-size: 1.214rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -555,8 +492,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 3.6rem;
-  left: 105.16px;
-  font-size: 1.256rem;
+  left: 37.96px;
+  font-size: 0.848rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -564,8 +501,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 5.4rem;
-  left: 64.84px;
-  font-size: 1.112rem;
+  left: 11.08px;
+  font-size: 1.07rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -573,8 +510,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 7.2rem;
-  left: 21.16px;
-  font-size: 1.058rem;
+  left: 36.84px;
+  font-size: 0.902rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -582,8 +519,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 9rem;
-  left: 64.84px;
-  font-size: 0.902rem;
+  left: 57px;
+  font-size: 1.352rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -591,8 +528,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 10.8rem;
-  left: 43.56px;
-  font-size: 0.83rem;
+  left: 36.84px;
+  font-size: 0.89rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -600,8 +537,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 12.6rem;
-  left: 40.2px;
-  font-size: 0.926rem;
+  left: 73.8px;
+  font-size: 1.388rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -609,8 +546,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 14.4rem;
-  left: 6.6px;
-  font-size: 1.07rem;
+  left: 23.4px;
+  font-size: 0.992rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -618,8 +555,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 16.2rem;
-  left: 2.12px;
-  font-size: 1.112rem;
+  left: 91.72px;
+  font-size: 0.95rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -627,8 +564,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 18rem;
-  left: 23.4px;
-  font-size: 1.214rem;
+  left: 80.52px;
+  font-size: 0.98rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -636,8 +573,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 19.8rem;
-  left: 78.28px;
-  font-size: 0.848rem;
+  left: 36.84px;
+  font-size: 0.986rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -645,8 +582,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 21.6rem;
-  left: 24.52px;
-  font-size: 1.328rem;
+  left: 21.16px;
+  font-size: 0.974rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -782,10 +719,10 @@ main section.servicios div ul {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "proyecto1 proyecto2" "proyecto3 proyecto4" "proyecto5 proyecto6" "proyecto7 proyecto8";
   }
-  main div div article div span:nth-child(1) {
+  main div div.portafolio article div span:nth-child(1) {
     font-size: 1.8rem;
   }
-  main div div article div span:nth-child(2) {
+  main div div.portafolio article div span:nth-child(2) {
     font-size: 1.3rem;
   }
 }
@@ -796,10 +733,10 @@ main section.servicios div ul {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "proyecto1 proyecto1 proyecto2" "proyecto3 proyecto4 proyecto4" "proyecto5 proyecto5 proyecto6" "proyecto7 proyecto8 proyecto8";
   }
-  main div div article div span:nth-child(1) {
+  main div div.portafolio article div span:nth-child(1) {
     font-size: 2rem;
   }
-  main div div article div span:nth-child(2) {
+  main div div.portafolio article div span:nth-child(2) {
     font-size: 1.5rem;
   }
 }
@@ -828,55 +765,55 @@ main section.servicios div ul {
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(1), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(1), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(1), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(1), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(1) {
     top: 0rem;
-    font-size: 1.864rem;
+    font-size: 2.032rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(2), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(2), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(2), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(2), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(2) {
     top: 2.4rem;
-    font-size: 1.738rem;
+    font-size: 1.094rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(3), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(3), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(3), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(3), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(3) {
     top: 4.8rem;
-    font-size: 1.64rem;
+    font-size: 1.528rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(4), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(4), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(4), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(4), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(4) {
     top: 7.2rem;
-    font-size: 1.388rem;
+    font-size: 1.444rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(5), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(5), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(5), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(5), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(5) {
     top: 9.6rem;
-    font-size: 2.116rem;
+    font-size: 0.828rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(6), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(6), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(6), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(6), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(6) {
     top: 12rem;
-    font-size: 1.822rem;
+    font-size: 0.926rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(7), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(7), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(7), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(7), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(7) {
     top: 14.4rem;
-    font-size: 2.144rem;
+    font-size: 1.864rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(8), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(8), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(8), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(8), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(8) {
     top: 16.8rem;
-    font-size: 1.724rem;
+    font-size: 1.822rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(9), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(9), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(9), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(9), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(9) {
     top: 19.2rem;
-    font-size: 1.654rem;
+    font-size: 1.948rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(10), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(10), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(10), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(10), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(10) {
     top: 21.6rem;
-    font-size: 1.682rem;
+    font-size: 2.186rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(11), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(11), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(11), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(11), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(11) {
     top: 24rem;
-    font-size: 2.13rem;
+    font-size: 2.088rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(12), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(12), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(12), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(12), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(12) {
     top: 26.4rem;
-    font-size: 0.898rem;
+    font-size: 1.64rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(13), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(13), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(13), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(13), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(13) {
     top: 28.8rem;
-    font-size: 1.304rem;
+    font-size: 0.814rem;
   }
   main section.servicios div h2 {
     font-size: 2rem;

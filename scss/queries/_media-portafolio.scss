@@ -6,30 +6,22 @@
         div {
             div {
                 &.portafolio {
-                    // grid-template-columns: repeat(2, 1fr);
-                    // grid-template-rows: repeat(4, 300px);
-                    // grid-template-areas:
-                    //     "proyecto1 proyecto2"
-                    //     "proyecto3 proyecto4"
-                    //     "proyecto5 proyecto6"
-                    //     "proyecto7 proyecto8";
-
                     @include mixin.grid(repeat(4, 300px), repeat(2, 1fr), null, null,
                         "proyecto1 proyecto2"
                         "proyecto3 proyecto4"
                         "proyecto5 proyecto6"
                         "proyecto7 proyecto8");
-                }
 
-                article {
-                    div {
-                        span {
-                            &:nth-child(1) {
-                                font-size: 1.8rem;
-                            }
+                    article {
+                        div {
+                            span {
+                                &:nth-child(1) {
+                                    font-size: 1.8rem;
+                                }
 
-                            &:nth-child(2) {
-                                font-size: 1.3rem;
+                                &:nth-child(2) {
+                                    font-size: 1.3rem;
+                                }
                             }
                         }
                     }
@@ -37,24 +29,6 @@
             }
         }
     }
-
-    // .portafolio {
-    //     grid-template-columns: repeat(2, 1fr);
-    //     grid-template-rows: repeat(4, 300px);
-    //     grid-template-areas:
-    //         "proyecto1 proyecto2"
-    //         "proyecto3 proyecto4"
-    //         "proyecto5 proyecto6"
-    //         "proyecto7 proyecto8";
-    // }
-
-    // .portafolio>article>div>span:nth-child(1) {
-    //     font-size: 1.8rem;
-    // }
-
-    // .portafolio>article>div>span:nth-child(2) {
-    //     font-size: 1.3rem;
-    // }
 }
 
 /* lg */
@@ -63,30 +37,22 @@
         div {
             div {
                 &.portafolio {
-                    // grid-template-columns: repeat(3, 1fr);
-                    // grid-template-rows: repeat(4, 300px);
-                    // grid-template-areas:
-                    //     "proyecto1 proyecto1 proyecto2"
-                    //     "proyecto3 proyecto4 proyecto4"
-                    //     "proyecto5 proyecto5 proyecto6"
-                    //     "proyecto7 proyecto8 proyecto8";
-
                     @include mixin.grid(repeat(4, 300px), repeat(3, 1fr), null, null,
                         "proyecto1 proyecto1 proyecto2"
                         "proyecto3 proyecto4 proyecto4"
                         "proyecto5 proyecto5 proyecto6"
                         "proyecto7 proyecto8 proyecto8");
-                }
 
-                article {
-                    div {
-                        span {
-                            &:nth-child(1) {
-                                font-size: 2rem;
-                            }
+                    article {
+                        div {
+                            span {
+                                &:nth-child(1) {
+                                    font-size: 2rem;
+                                }
 
-                            &:nth-child(2) {
-                                font-size: 1.5rem;
+                                &:nth-child(2) {
+                                    font-size: 1.5rem;
+                                }
                             }
                         }
                     }
@@ -94,22 +60,4 @@
             }
         }
     }
-
-    // .portafolio {
-    //     grid-template-columns: repeat(3, 1fr);
-    //     grid-template-rows: repeat(4, 300px);
-    //     grid-template-areas:
-    //         "proyecto1 proyecto1 proyecto2"
-    //         "proyecto3 proyecto4 proyecto4"
-    //         "proyecto5 proyecto5 proyecto6"
-    //         "proyecto7 proyecto8 proyecto8";
-    // }
-
-    // .portafolio>article>div>span:nth-child(1) {
-    //     font-size: 2rem;
-    // }
-
-    // .portafolio>article>div>span:nth-child(2) {
-    //     font-size: 1.5rem;
-    // }
 }
