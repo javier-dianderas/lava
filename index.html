@@ -27,7 +27,8 @@
         <div class="offcanvas offcanvas-end header__nav__offcanvas" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header header__nav__offcanvas-header">
-            <img class="d-inline-block align-text-top" src="assets/img/inicio/logo_blanco.png" alt="logo">
+            <img id="mobile-logo" class="d-inline-block align-text-top" src="assets/img/inicio/logo_blanco.png"
+              alt="logo">
             <button type="button" class="btn ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
               <i class="fa-solid fa-xmark fa-lg"></i>
             </button>
@@ -307,13 +308,18 @@
 
       if (offcanvas && nav) {
         offcanvas.addEventListener("show.bs.offcanvas", () => {
-          const img = document.getElementById("main-logo");
-          img.classList.add("animate__animated");
-          img.classList.add("animate__backOutLeft");
+          const main_logo = document.getElementById("main-logo");
+          const mobile_logo = document.getElementById("mobile-logo");
+          main_logo.classList.add("animate__animated");
+          main_logo.classList.add("animate__backOutLeft");
+          mobile_logo.classList.add("animate__animated");
+          mobile_logo.classList.add("animate__backInRight");
           setTimeout(() => {
             nav.classList.add("offcanvas-open");
-            img.classList.remove("animate__backOutLeft");
-            img.classList.remove("animate__animated");
+            main_logo.classList.remove("animate__backOutLeft");
+            main_logo.classList.remove("animate__animated");
+            mobile_logo.classList.remove("animate__animated");
+            mobile_logo.classList.remove("animate__backInRight");
           }, 1000);
         });
         offcanvas.addEventListener("hidden.bs.offcanvas", () => {

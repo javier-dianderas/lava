@@ -44,7 +44,6 @@ header {
                     }
 
                     img {
-                        // height: 24px;
                         @include mixin.size(null, 24px);
                     }
 
@@ -70,7 +69,6 @@ header {
                             a {
                                 &.header__nav__nav-link {
                                     color: map.get(variable.$colores, blanco);
-                                    // transition: background-color 0.5s linear;
                                     background-image: linear-gradient(to right, map.get(variable.$colores, secundario) 0%, map.get(variable.$colores, secundario) 100%);
                                     background-size: 0% 100%;
                                     background-repeat: no-repeat;
@@ -81,8 +79,6 @@ header {
                                     }
 
                                     &:hover {
-                                        // background-color: map.get(variable.$colores, secundario);
-                                        // background-color: linear-gradient(90deg, map.get(variable.$colores, primario) 0%, map.get(variable.$colores, secundario) 100%);                                        
                                         color: map.get(variable.$colores, terciario);
                                         background-size: 100% 100%;
                                         transition: background-size 0.5s ease-in-out;
