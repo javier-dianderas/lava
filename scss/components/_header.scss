@@ -71,7 +71,6 @@ header {
                                     background-image: linear-gradient(to right, map.get(variable.$colores, secundario) 0%, map.get(variable.$colores, secundario) 100%);
                                     background-size: 0% 100%;
                                     background-repeat: no-repeat;
-                                    // transition: background-size 0.1s ease-in-out;
                                     transition: none;
 
                                     &.active {
@@ -81,7 +80,6 @@ header {
                                     &:hover {
                                         color: map.get(variable.$colores, terciario);
                                         background-size: 100% 100%;
-                                        // transition: background-size 0.2s ease-in-out;
                                         transition: none;
                                     }
                                 }
