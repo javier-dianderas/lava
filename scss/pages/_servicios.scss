@@ -5,21 +5,6 @@
 main {
     section {
         &.servicios {
-            // grid-template-columns: 1fr;
-            // grid-template-rows: repeat(10, auto);
-            // row-gap: 1.5rem;
-            // grid-template-areas:
-            //     "social"
-            //     "imagen-social"
-            //     "branding"
-            //     "imagen-branding"
-            //     "audiovisual"
-            //     "imagen-audiovisual"
-            //     "disenio"
-            //     "imagen-disenio"
-            //     "fotografia"
-            //     "imagen-fotografia";
-
             @include mixin.grid(repeat(10, auto), 1fr, 1.5rem, null,
                 "social"
                 "imagen-social"
@@ -31,244 +16,117 @@ main {
                 "imagen-disenio"
                 "fotografia"
                 "imagen-fotografia");
-        }
 
-        div {
+            div {
+                &:nth-child(1) {
+                    grid-area: social;
+                }
 
-            // &.servicios__social {
-            &:nth-child(1) {
-                grid-area: social;
-            }
+                &:nth-child(2) {
+                    grid-area: imagen-social;
+                }
 
-            // &.servicios__imagen-social {
-            &:nth-child(2) {
-                grid-area: imagen-social;
+                &:nth-child(4) {
+                    grid-area: branding;
+                }
 
-                // img {
-                //     &.servicios__img--size {
-                //         // width: 233px;
-                //         // height: 350px;
-                //         @include mixin.size(233px, 350px);
-                //     }
-                // }
-            }
+                &:nth-child(3) {
+                    grid-area: imagen-branding;
+                }
 
-            // &.servicios__branding {
-            &:nth-child(4) {
-                grid-area: branding;
-            }
+                &:nth-child(5) {
+                    grid-area: audiovisual;
+                }
 
-            // &.servicios__imagen-branding {
-            &:nth-child(3) {
-                grid-area: imagen-branding;
+                &:nth-child(6) {
+                    grid-area: imagen-audiovisual;
+                }
 
-                // img {
-                //     &.servicios__img--size {
-                //         @include mixin.size(233px, 350px);
-                //     }
-                // }
-            }
+                &:nth-child(8) {
+                    grid-area: disenio;
+                }
 
-            // &.servicios__audiovisual {
-            &:nth-child(5) {
-                grid-area: audiovisual;
-            }
+                &:nth-child(7) {
+                    grid-area: imagen-disenio;
+                }
 
-            // &.servicios__imagen-audiovisual {
-            &:nth-child(6) {
-                grid-area: imagen-audiovisual;
+                &:nth-child(9) {
+                    grid-area: fotografia;
+                }
 
-                // img {
-                //     &.servicios__img--size {
-                //         @include mixin.size(233px, 350px);
-                //     }
-                // }
-            }
+                &:nth-child(10) {
+                    grid-area: imagen-fotografia;
+                }
 
-            // &.servicios__disenio {
-            &:nth-child(8) {
-                grid-area: disenio;
-            }
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(6),
+                &:nth-child(7),
+                &:nth-child(10) {
+                    .servicios__card {
+                        @include mixin.size(233px, 350px);
+                        perspective: 62rem;
 
-            // &.servicios__imagen-disenio {
-            &:nth-child(7) {
-                grid-area: imagen-disenio;
-
-                // img {
-                //     &.servicios__img--size {
-                //         @include mixin.size(233px, 350px);
-                //     }
-                // }
-            }
-
-            // &.servicios__fotografia {
-            &:nth-child(9) {
-                grid-area: fotografia;
-            }
-
-            // &.servicios__imagen-fotografia {
-            &:nth-child(10) {
-                grid-area: imagen-fotografia;
-
-                // img {
-                //     &.servicios__img--size {
-                //         @include mixin.size(233px, 350px);
-                //     }
-                // }
-            }
-
-            &:nth-child(2),
-            &:nth-child(3),
-            &:nth-child(6),
-            &:nth-child(7),
-            &:nth-child(10) {
-                .servicios__card {
-                    @include mixin.size(233px, 350px);
-                    perspective: 62rem;
-
-                    &:hover {
-                        .servicios__card-inner {
-                            transform: rotateY(180deg);
+                        &:hover {
+                            .servicios__card-inner {
+                                transform: rotateY(180deg);
+                            }
                         }
-                    }
 
-                    .servicios__card-inner {
-                        width: 100%;
-                        height: 100%;
-                        transform-style: preserve-3d;
-                        transition: transform 0.6s;
-                        position: relative;
-
-                        .servicios__card-front,
-                        .servicios__card-back {
+                        .servicios__card-inner {
                             width: 100%;
                             height: 100%;
-                            position: absolute;
-                            backface-visibility: hidden;
-                        }
-
-                        .servicios__card-back {
-                            transform: rotateY(180deg);
-                            background: map.get(variable.$colores, terciario);
+                            transform-style: preserve-3d;
+                            transition: transform 0.6s;
                             position: relative;
-                            overflow: hidden;
 
-                            $top: 0;
+                            .servicios__card-front,
+                            .servicios__card-back {
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                backface-visibility: hidden;
+                            }
 
-                            @for $i from 1 to 14 {
-                                span:nth-child(#{$i}) {
-                                    position: absolute;
-                                    display: block;
-                                    top: $top + rem;
-                                    @include mixin.random-position-left(1, 233 - 120);
-                                    @include mixin.random-font-size(0.8, 1.4);
-                                    font-weight: 300;
-                                    text-shadow: 1px 0 10px map.get(variable.$colores, negro-semistransparente);
+                            .servicios__card-back {
+                                transform: rotateY(180deg);
+                                background: map.get(variable.$colores, terciario);
+                                position: relative;
+                                overflow: hidden;
+
+                                $top: 0;
+
+                                @for $i from 1 to 14 {
+                                    span:nth-child(#{$i}) {
+                                        position: absolute;
+                                        display: block;
+                                        top: $top + rem;
+                                        @include mixin.random-position-left(1, 233 - 120);
+                                        @include mixin.random-font-size(0.8, 1.4);
+                                        font-weight: 300;
+                                        text-shadow: 1px 0 10px map.get(variable.$colores, negro-semistransparente);
+                                    }
+
+                                    $top: $top + 1.8;
                                 }
-
-                                $top: $top + 1.8;
                             }
                         }
                     }
                 }
-            }
 
-            h2 {
-                font-size: 1.25rem;
-                font-weight: bold;
-            }
+                h2 {
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                }
 
-            span {
-                font-size: 1rem;
-            }
+                span {
+                    font-size: 1rem;
+                }
 
-            ul {
-                font-size: 1rem;
+                ul {
+                    font-size: 1rem;
+                }
             }
         }
     }
 }
-
-// .servicios {
-//     grid-template-columns: 1fr;
-//     grid-template-rows: repeat(10, auto);
-//     row-gap: 1.5rem;
-//     grid-template-areas:
-//         "social"
-//         "imagen-social"
-//         "branding"
-//         "imagen-branding"
-//         "audiovisual"
-//         "imagen-audiovisual"
-//         "disenio"
-//         "imagen-disenio"
-//         "fotografia"
-//         "imagen-fotografia";
-// }
-
-// .servicios__social {
-//     grid-area: social;
-// }
-
-// .servicios__imagen-social {
-//     grid-area: imagen-social;
-// }
-
-// .servicios__branding {
-//     grid-area: branding;
-// }
-
-// .servicios__imagen-branding {
-//     grid-area: imagen-branding;
-// }
-
-// .servicios__audiovisual {
-//     grid-area: audiovisual;
-// }
-
-// .servicios__imagen-audiovisual {
-//     grid-area: imagen-audiovisual;
-// }
-
-// .servicios__disenio {
-//     grid-area: disenio;
-// }
-
-// .servicios__imagen-disenio {
-//     grid-area: imagen-disenio;
-// }
-
-// .servicios__fotografia {
-//     grid-area: fotografia;
-// }
-
-// .servicios__imagen-fotografia {
-//     grid-area: imagen-fotografia;
-// }
-
-// .servicios__social h2,
-// .servicios__branding h2,
-// .servicios__audiovisual h2,
-// .servicios__disenio h2,
-// .servicios__fotografia h2 {
-//     font-size: 1.25rem;
-//     font-weight: bold;
-// }
-
-// .servicios__social span,
-// .servicios__branding span,
-// .servicios__audiovisual span,
-// .servicios__disenio span,
-// .servicios__fotografia span,
-// .servicios__social ul,
-// .servicios__branding ul,
-// .servicios__audiovisual ul,
-// .servicios__disenio ul,
-// .servicios__fotografia ul {
-//     font-size: 1rem;
-// }
-
-// .servicios__img--size {
-//     width: 233px;
-//     height: 350px;
-// }

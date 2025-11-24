@@ -5,12 +5,6 @@
     main {
         section {
             &.nosotros__intro {
-                // grid-template-columns: 1fr 1fr;
-                // grid-template-rows: auto auto;
-                // grid-template-areas:
-                //     "titulo imagen-titulo"
-                //     "imagen-dedicatoria dedicatoria";
-
                 @include mixin.grid(auto auto, 1fr 1fr, null, null,
                     "titulo imagen-titulo"
                     "imagen-dedicatoria dedicatoria");
@@ -45,28 +39,6 @@
             }
         }
     }
-
-
-    // .nosotros__intro {
-    //     grid-template-columns: 1fr 1fr;
-    //     grid-template-rows: auto auto;
-    //     grid-template-areas:
-    //         "titulo imagen-titulo"
-    //         "imagen-dedicatoria dedicatoria";
-    // }
-
-    // .nosotros__intro--titulo h2 {
-    //     font-size: 1.8rem;
-    // }
-
-    // .nosotros__intro--titulo span,
-    // .nosotros__intro--dedicatoria span {
-    //     font-size: 1.25rem;
-    // }
-
-    // .nosotros__confian--titulo {
-    //     font-size: 1.6rem;
-    // }
 }
 
 /* md */
@@ -82,10 +54,6 @@
             }
         }
     }
-
-    // .nosotros__logos>img {
-    //     width: 180px;
-    // }
 }
 
 /* lg */
@@ -140,22 +108,4 @@
             }
         }
     }
-
-    // .nosotros__img--size {
-    //     width: 333px;
-    //     height: 500px;
-    // }
-
-    // .nosotros__intro--titulo h2 {
-    //     font-size: 2rem;
-    // }
-
-    // .nosotros__intro--titulo span,
-    // .nosotros__intro--dedicatoria span {
-    //     font-size: 1.5rem;
-    // }
-
-    // .nosotros__confian--titulo {
-    //     font-size: 1.8rem;
-    // }
 }

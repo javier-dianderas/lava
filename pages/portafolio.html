@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="../assets/css/estilos.css" />
 </head>
 <!-- se agrego para que en pantallas muy grandes el contenido ocupe el 100% del viewport -->
@@ -17,7 +18,8 @@
     <nav class="navbar navbar-expand-md header__nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
-          <img class="d-inline-block align-text-top" src="../assets/img/inicio/logo_blanco.png" alt="logo">
+          <img id="main-logo" class="d-inline-block align-text-top" src="../assets/img/inicio/logo_blanco.png"
+            alt="logo">
         </a>
         <button class="navbar-toggler my-2 py-2 header__nav__navbar-toggler" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -26,7 +28,8 @@
         <div class="offcanvas offcanvas-end header__nav__offcanvas" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header header__nav__offcanvas-header">
-            <img class="d-inline-block align-text-top" src="../assets/img/inicio/logo_blanco.png" alt="logo">
+            <img id="mobile-logo" class="d-inline-block align-text-top" src="../assets/img/inicio/logo_blanco.png"
+              alt="logo">
             <button type="button" class="btn ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
               <i class="fa-solid fa-xmark fa-lg"></i>
             </button>
@@ -186,7 +189,19 @@
 
       if (offcanvas && nav) {
         offcanvas.addEventListener("show.bs.offcanvas", () => {
-          nav.classList.add("offcanvas-open");
+          const main_logo = document.getElementById("main-logo");
+          const mobile_logo = document.getElementById("mobile-logo");
+          main_logo.classList.add("animate__animated");
+          main_logo.classList.add("animate__backOutLeft");
+          mobile_logo.classList.add("animate__animated");
+          mobile_logo.classList.add("animate__backInRight");
+          setTimeout(() => {
+            nav.classList.add("offcanvas-open");
+            main_logo.classList.remove("animate__backOutLeft");
+            main_logo.classList.remove("animate__animated");
+            mobile_logo.classList.remove("animate__animated");
+            mobile_logo.classList.remove("animate__backInRight");
+          }, 1000);
         });
         offcanvas.addEventListener("hidden.bs.offcanvas", () => {
           nav.classList.remove("offcanvas-open");
