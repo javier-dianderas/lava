@@ -9,7 +9,6 @@ main {
                 div {
                     img {
                         &.inicio__banner {
-                            // height: 300px;
                             @include mixin.size(null, 300px);
                             object-fit: cover;
                         }
@@ -39,58 +38,70 @@ main {
                 }
             }
 
-            /* inicio - sección nosotros */
+            // inicio - sección nosotros
             &.inicio__container-nosotros {
                 span {
                     font-size: 1rem;
                 }
             }
 
-            /* inicio - sección servicios */
+            // inicio - sección servicios
             &.inicio__container-servicio-cards {
                 gap: 20px;
 
                 a {
                     text-decoration: none;
                     display: block;
-                    // width: 100%;
-                    @include mixin.size(100%);
+                    @include mixin.size(100%, null);
 
                     article {
                         background-color: map.get(variable.$colores, primario-semitransparente);
                         color: map.get(variable.$colores, blanco);
                         box-shadow: 0 2px 6px map.get(variable.$colores, negro-semistransparente-suave);
-                        transition: transform 0.2s ease, box-shadow 0.2s ease;
                         overflow: hidden;
-                        // height: 100%;
-                        // width: 100%;
                         @include mixin.size(100%, 100%);
 
                         &:hover {
-                            transform: translateY(-5px);
                             box-shadow: 0 6px 12px map.get(variable.$colores, negro-semistransparente);
                         }
 
-                        img {
-                            // width: 100%;
-                            // height: 160px;
-                            @include mixin.size(100%, 160px);
-                            object-fit: cover;
+                        &:hover {
+                            div {
+                                img {
+                                    transform: scale(1.1);
+                                }
+                            }
                         }
 
                         div {
-                            padding: 0.75rem 1rem;
-                            color: map.get(variable.$colores, blanco);
+                            &:nth-child(1) {
+                                @include mixin.size(100%, 160px);
+                                margin: 0;
+                                padding: 0;
+                                overflow: hidden;
 
-                            span {
-                                &:nth-child(1) {
+                                img {
+                                    @include mixin.size(100%, 160px);
                                     display: block;
-                                    font-weight: bold;
-                                    font-size: 1.2rem;
+                                    object-fit: cover;
+                                    transition: transform 0.5s ease, box-shadow 0.2s ease;
                                 }
+                            }
 
-                                &:nth-child(2) {
-                                    font-size: 1rem;
+                            &:nth-child(2) {
+                                padding: 0.75rem 1rem;
+                                color: map.get(variable.$colores, blanco);
+
+                                span {
+                                    &:nth-child(1) {
+                                        display: block;
+                                        font-weight: bold;
+                                        font-size: 1.2rem;
+                                    }
+
+                                    &:nth-child(2) {
+                                        font-size: 1rem;
+                                    }
                                 }
                             }
                         }
@@ -102,7 +113,6 @@ main {
                 gap: 25px;
 
                 img {
-                    // width: 150px;
                     @include mixin.size(150px);
                 }
             }
@@ -113,35 +123,34 @@ main {
                 a {
                     text-decoration: none;
                     display: block;
-                    // width: 100%;
                     @include mixin.size(100%);
 
                     article {
                         position: relative;
-                        // width: 100%;
                         @include mixin.size(100%);
                         overflow: hidden;
                         border-radius: 10px;
                         box-shadow: 0 2px 6px map.get(variable.$colores, negro-semistransparente-suave);
 
                         &:hover {
-                            transform: translateY(-5px);
                             box-shadow: 0 6px 12px map.get(variable.$colores, negro-semistransparente);
                         }
 
+                        &:hover img {
+                            transform: scale(1.1);
+                        }
+
                         img {
-                            // width: 100%;
-                            // height: 220px;
                             @include mixin.size(100%, 220px);
                             display: block;
                             object-fit: cover;
+                            transition: transform 0.5s ease, box-shadow 0.2s ease;
                         }
 
                         div {
                             position: absolute;
                             bottom: 0;
                             left: 0;
-                            // width: 100%;
                             @include mixin.size(100%);
                             background: map.get(variable.$colores, negro-semistransparente);
                             color: map.get(variable.$colores, blanco);
@@ -171,131 +180,3 @@ main {
         }
     }
 }
-
-// .inicio__banner {
-//     height: 300px;
-//     object-fit: cover;
-// }
-
-// .inicio__banner-caption {
-//     background-color: map.get(variable.$colores, negro-semistransparente);
-//     right: 0;
-//     left: 0;
-//     bottom: 0;
-//     padding-bottom: 2.5rem;
-// }
-
-// .inicio__banner-caption>span:nth-child(1) {
-//     display: block;
-//     font-weight: bold;
-//     font-size: 1.25rem;
-// }
-
-// .inicio__banner-caption>span:nth-child(2) {
-//     font-size: 1rem;
-// }
-
-// .inicio__container-servicio-cards {
-//     gap: 20px;
-// }
-
-/* inicio - sección nosotros */
-// .inicio__container-nosotros>span {
-//     font-size: 1rem;
-// }
-
-/* inicio - sección servicios */
-// .inicio__container-servicio-cards>a>article {
-//     background-color: map.get(variable.$colores, primario-semitransparente);
-//     color: map.get(variable.$colores, blanco);
-//     box-shadow: 0 2px 6px map.get(variable.$colores, negro-semistransparente-suave);
-//     transition: transform 0.2s ease, box-shadow 0.2s ease;
-//     overflow: hidden;
-//     height: 100%;
-//     width: 100%;
-// }
-
-// .inicio__container-servicio-cards>a>article:hover {
-//     transform: translateY(-5px);
-//     box-shadow: 0 6px 12px map.get(variable.$colores, negro-semistransparente);
-// }
-
-// .inicio__container-servicio-cards>a>article>img {
-//     width: 100%;
-//     height: 160px;
-//     object-fit: cover;
-// }
-
-// .inicio__container-servicio-cards>a>article>div {
-//     padding: 0.75rem 1rem;
-//     color: map.get(variable.$colores, blanco);
-// }
-
-// .inicio__container-servicio-cards>a>article>div>span:nth-child(1) {
-//     display: block;
-//     font-weight: bold;
-//     font-size: 1.2rem;
-// }
-
-// .inicio__title {
-//     font-size: 1.25rem;
-//     font-weight: bold;
-// }
-
-// .inicio__logos {
-//     gap: 25px;
-// }
-
-// .inicio__logos>img {
-//     width: 150px;
-// }
-
-// .inicio__container-portafolio-cards {
-//     gap: 20px;
-// }
-
-// .inicio__container-servicio-cards>a,
-// .inicio__container-portafolio-cards>a {
-//     text-decoration: none;
-//     display: block;
-//     width: 100%;
-// }
-
-// .inicio__container-portafolio-cards>a>article {
-//     position: relative;
-//     width: 100%;
-//     overflow: hidden;
-//     border-radius: 10px;
-//     box-shadow: 0 2px 6px map.get(variable.$colores, negro-semistransparente-suave);
-// }
-
-// .inicio__container-portafolio-cards>a>article:hover {
-//     transform: translateY(-5px);
-//     box-shadow: 0 6px 12px map.get(variable.$colores, negro-semistransparente);
-// }
-
-// .inicio__container-portafolio-cards>a>article>img {
-//     width: 100%;
-//     height: 220px;
-//     display: block;
-//     object-fit: cover;
-// }
-
-// .inicio__container-portafolio-cards>a>article>div {
-//     position: absolute;
-//     bottom: 0;
-//     left: 0;
-//     width: 100%;
-//     background: map.get(variable.$colores, negro-semistransparente);
-//     color: map.get(variable.$colores, blanco);
-//     padding: 15px 20px;
-// }
-
-// .inicio__container-portafolio-cards>a>article>div>span:nth-child(1) {
-//     font-size: 1.4rem;
-//     display: block;
-// }
-
-// .inicio__container-portafolio-cards>a>article>div>span:nth-child(2) {
-//     font-size: 1rem;
-// }

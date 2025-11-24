@@ -1,3 +1,5 @@
+@use "../utilities/mixin";
+
 /* sm */
 @media(min-width: 576px) {
     main {
@@ -19,17 +21,18 @@
                     }
                 }
 
-                /* inicio - sección nosotros */
+                // inicio - sección nosotros
                 &.inicio__container-nosotros {
                     span {
                         font-size: 1.25rem;
                     }
                 }
 
-                /* inicio - sección servicios */
+                // inicio - sección servicios
                 &.inicio__container-servicio-cards {
                     a {
-                        width: auto;
+                        // width: auto;
+                        @include mixin.size(auto, null);
 
                         article {
                             width: 230px;
@@ -59,39 +62,6 @@
             }
         }
     }
-
-    // .inicio__banner-caption>span:nth-child(1) {
-    //     font-size: 1.75rem;
-    // }
-
-    // .inicio__banner-caption>span:nth-child(2) {
-    //     font-size: 1.5rem;
-    // }
-
-    // .inicio__title {
-    //     font-size: 1.5rem;
-    // }
-
-    // .inicio__container-nosotros>span {
-    //     font-size: 1.25rem;
-    // }
-
-    // .inicio__container-servicio-cards>a,
-    // .inicio__container-portafolio-cards>a {
-    //     width: auto;
-    // }
-
-    // .inicio__container-servicio-cards>a>article {
-    //     width: 230px;
-    // }
-
-    // .inicio__container-portafolio-cards>a>article {
-    //     width: 300px;
-    // }
-
-    // .inicio__container-portafolio-cards>a>article>img {
-    //     height: auto;
-    // }
 }
 
 /* md */
@@ -111,10 +81,6 @@
             }
         }
     }
-
-    // .inicio__banner {
-    //     height: 400px;
-    // }
 }
 
 /* lg */
@@ -141,14 +107,4 @@
             }
         }
     }
-
-    // .inicio__banner-caption>span:nth-child(1) {
-    //     display: block;
-    //     font-weight: bold;
-    //     font-size: 2rem;
-    // }
-
-    // .inicio__banner-caption>span:nth-child(2) {
-    //     font-size: 1.75rem;
-    // }
 }
