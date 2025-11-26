@@ -96,6 +96,8 @@ main {
 
                                 $top: 0;
 
+                                //Se asigna un valor aleatorio para el tamño de la fuente desde 0.8rem y 1.4rem
+                                //Se posiciona el texto con una diferencia de 1.8rem en el eje Y para que no se sobrepongan
                                 @for $i from 1 to 14 {
                                     span:nth-child(#{$i}) {
                                         position: absolute;

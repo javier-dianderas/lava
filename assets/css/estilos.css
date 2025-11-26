@@ -478,8 +478,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 0rem;
-  left: 62.6px;
-  font-size: 1.022rem;
+  left: 20.04px;
+  font-size: 1.07rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -487,8 +487,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 1.8rem;
-  left: 13.32px;
-  font-size: 1.076rem;
+  left: 48.04px;
+  font-size: 1.118rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -496,8 +496,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 3.6rem;
-  left: 100.68px;
-  font-size: 0.956rem;
+  left: 21.16px;
+  font-size: 0.866rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -505,8 +505,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 5.4rem;
-  left: 110.76px;
-  font-size: 0.884rem;
+  left: 67.08px;
+  font-size: 1.148rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -514,8 +514,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 7.2rem;
-  left: 69.32px;
-  font-size: 0.806rem;
+  left: 79.4px;
+  font-size: 0.854rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -524,7 +524,7 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   display: block;
   top: 9rem;
   left: 12.2px;
-  font-size: 1.058rem;
+  font-size: 0.926rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -532,8 +532,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 10.8rem;
-  left: 27.88px;
-  font-size: 1.076rem;
+  left: 91.72px;
+  font-size: 1.28rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -541,8 +541,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 12.6rem;
-  left: 61.48px;
-  font-size: 0.968rem;
+  left: 110.76px;
+  font-size: 1.154rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -550,8 +550,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 14.4rem;
-  left: 11.08px;
-  font-size: 1.238rem;
+  left: 65.96px;
+  font-size: 1.358rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -559,8 +559,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 16.2rem;
-  left: 65.96px;
-  font-size: 1.352rem;
+  left: 101.8px;
+  font-size: 0.866rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -568,8 +568,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 18rem;
-  left: 18.92px;
-  font-size: 1.394rem;
+  left: 52.52px;
+  font-size: 1.064rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -577,8 +577,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 19.8rem;
-  left: 4.36px;
-  font-size: 0.86rem;
+  left: 50.28px;
+  font-size: 1.058rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -586,8 +586,8 @@ main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner 
   position: absolute;
   display: block;
   top: 21.6rem;
-  left: 62.6px;
-  font-size: 1.352rem;
+  left: 36.84px;
+  font-size: 1.01rem;
   font-weight: 300;
   text-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -763,55 +763,55 @@ main section.servicios div ul {
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(1), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(1), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(1), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(1), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(1) {
     top: 0rem;
-    font-size: 1.262rem;
+    font-size: 0.856rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(2), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(2), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(2), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(2), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(2) {
     top: 2.4rem;
-    font-size: 1.374rem;
+    font-size: 1.738rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(3), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(3), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(3), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(3), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(3) {
     top: 4.8rem;
-    font-size: 1.22rem;
+    font-size: 0.856rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(4), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(4), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(4), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(4), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(4) {
     top: 7.2rem;
-    font-size: 2.186rem;
+    font-size: 1.178rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(5), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(5), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(5), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(5), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(5) {
     top: 9.6rem;
-    font-size: 1.262rem;
+    font-size: 1.388rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(6), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(6), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(6), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(6), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(6) {
     top: 12rem;
-    font-size: 1.878rem;
+    font-size: 0.912rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(7), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(7), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(7), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(7), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(7) {
     top: 14.4rem;
-    font-size: 1.332rem;
+    font-size: 1.654rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(8), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(8), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(8), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(8), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(8) {
     top: 16.8rem;
-    font-size: 1.514rem;
+    font-size: 1.36rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(9), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(9), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(9), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(9), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(9) {
     top: 19.2rem;
-    font-size: 1.626rem;
+    font-size: 1.402rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(10), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(10), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(10), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(10), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(10) {
     top: 21.6rem;
-    font-size: 1.276rem;
+    font-size: 1.22rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(11), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(11), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(11), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(11), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(11) {
     top: 24rem;
-    font-size: 1.976rem;
+    font-size: 1.472rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(12), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(12), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(12), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(12), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(12) {
     top: 26.4rem;
-    font-size: 1.108rem;
+    font-size: 0.982rem;
   }
   main section.servicios div:nth-child(2) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(13), main section.servicios div:nth-child(3) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(13), main section.servicios div:nth-child(6) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(13), main section.servicios div:nth-child(7) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(13), main section.servicios div:nth-child(10) .servicios__card .servicios__card-inner .servicios__card-back span:nth-child(13) {
     top: 28.8rem;
-    font-size: 2.102rem;
+    font-size: 1.206rem;
   }
   main section.servicios div h2 {
     font-size: 2rem;

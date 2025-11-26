@@ -29,22 +29,12 @@ main {
 
                             textarea {
                                 &.form-control {
-                                    // height: 8rem !important;
                                     @include mixin.size(null, 8rem !important);
                                 }
                             }
                         }
 
                         &:last-child {
-
-                            // button {
-                            //     --bs-btn-color: #{map.get(variable.$colores, blanco)};
-                            //     --bs-btn-bg: #{map.get(variable.$colores, primario)};
-                            //     --bs-btn-border-color: #{map.get(variable.$colores, primario)};
-                            //     --bs-btn-hover-color: #{map.get(variable.$colores, terciario)};
-                            //     --bs-btn-hover-bg: #{map.get(variable.$colores, secundario)};
-                            //     --bs-btn-hover-border-color: #{map.get(variable.$colores, secundario)};
-                            // }
                             button {
                                 &.button_primary {
                                     @extend %button_base;

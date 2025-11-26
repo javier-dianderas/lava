@@ -49,15 +49,12 @@
                                 .servicios__card-back {
                                     $top: 0;
 
+                                    //Se asigna un valor aleatorio para el tamño de la fuente desde 0.8rem y 2.2rem
+                                    //Se posiciona el texto con una diferencia de 2.4rem en el eje Y para que no se sobrepongan
                                     @for $i from 1 to 14 {
                                         span:nth-child(#{$i}) {
-                                            // position: absolute;
-                                            // display: block;
                                             top: $top + rem;
-                                            // @include mixin.random-position-left(1, 233 - 120);
                                             @include mixin.random-font-size(0.8, 2.2);
-                                            // font-weight: 300;
-                                            // text-shadow: 1px 0 10px map.get(variable.$colores, negro-semistransparente);
                                         }
 
                                         $top: $top + 2.4;

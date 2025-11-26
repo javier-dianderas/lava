@@ -32,17 +32,19 @@
     }
 }
 
-// Calcula el valor aleatorio
+// Calcula un valor aleatorio entre el $min y el $max para el atributo left
 @mixin random-position-left($min, $max) {
     $random-left: $min + (math.random(100) / 100) * ($max - $min);
     left: $random-left + px;
 }
 
+// Calcula un valor aleatorio entre el $min y el $max para el atributo top
 @mixin random-position-top($min, $max) {
     $random-top: $min + (math.random(100) / 100) * ($max - $min);
     top: $random-top + px;
 }
 
+// Calcula un valor aleatorio entre el $min y el $max para el atributo font-size
 @mixin random-font-size($min, $max) {
     $random-font-size: $min + (math.random(100) / 100) * ($max - $min);
     font-size: $random-font-size + rem;

@@ -31,7 +31,6 @@
                 // inicio - sección servicios
                 &.inicio__container-servicio-cards {
                     a {
-                        // width: auto;
                         @include mixin.size(auto, null);
 
                         article {
