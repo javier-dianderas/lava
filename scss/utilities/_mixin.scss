@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @mixin size($width: null, $height: null) {
     @if $width {
         width: $width;
@@ -32,16 +34,16 @@
 
 // Calcula el valor aleatorio
 @mixin random-position-left($min, $max) {
-    $random-left: $min + (random(100) / 100) * ($max - $min);
+    $random-left: $min + (math.random(100) / 100) * ($max - $min);
     left: $random-left + px;
 }
 
 @mixin random-position-top($min, $max) {
-    $random-top: $min + (random(100) / 100) * ($max - $min);
+    $random-top: $min + (math.random(100) / 100) * ($max - $min);
     top: $random-top + px;
 }
 
 @mixin random-font-size($min, $max) {
-    $random-font-size: $min + (random(100) / 100) * ($max - $min);
+    $random-font-size: $min + (math.random(100) / 100) * ($max - $min);
     font-size: $random-font-size + rem;
 }
