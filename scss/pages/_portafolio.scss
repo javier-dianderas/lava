@@ -91,17 +91,14 @@ main {
                         padding: 1rem;
                         box-sizing: border-box;
 
-                        span {
-                            &:nth-child(1) {
-                                font-size: 1.7rem;
-                                display: block;
-                            }
+                        h2 {
+                            font-size: 1.7rem;
+                        }
 
-                            &:nth-child(2) {
-                                font-size: 1.2rem;
-                                display: block;
-                                font-weight: bold;
-                            }
+                        span {
+                            font-size: 1.2rem;
+                            display: block;
+                            font-weight: bold;
                         }
                     }
                 }
